@@ -1,0 +1,7 @@
+<h1>Chart over time</h1>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<%= content_tag "div", id: "items", data: {url: Earthquake.order('time ASC') } do %>
+  
+<% end %>
+

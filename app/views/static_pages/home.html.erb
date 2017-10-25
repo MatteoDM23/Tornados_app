@@ -1,0 +1,20 @@
+<!-- This is the content of the home page view using HTML and Bootstrap.-->
+
+<div class="center jumbotron">
+  <h1>Welcome to the Earthquake App!</h1>
+
+  <h2>
+    This is the home page for the Earthquake Data Analysis Application.
+    Sign up and login to navigate the site and view earthquake data from around the world.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="image_logo">
+  <%= link_to image_tag("earthquake.png", alt: "Earthquake logo"), 'https://earthquake.usgs.gov/' %>
+</div>    
+   
+
+
+
