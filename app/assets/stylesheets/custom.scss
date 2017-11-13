@@ -43,6 +43,13 @@ body.signup {
   }
 }
 
+body.login {
+  background-image: url("tornado7");
+  background-size: cover;
+  h1 {
+    color: #d1dbfa;
+  }
+}
 section {
   overflow: auto;
 }
