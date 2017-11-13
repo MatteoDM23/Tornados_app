@@ -2,8 +2,25 @@
 to the contact page of the earthquake.usgs.gov website. --> 
 
 <% provide(:title, "Contact") %>
-<h1>Contact</h1>
-<p>
-  For further information on earthquakes and appropriate contacts, please click
-  <a href="https://earthquake.usgs.gov/contactus/">here</a>.
-</p>
+<body class="contact">
+  <h1>Contact</h1>
+  <h2>Feel free to drop a message to NOAA using your Twitter account and they'll get back to you as soon as possible.</h2>
+      <center><a href="https://twitter.com/intent/tweet?screen_name=NOAA&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">
+      Tweet to @NOAA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <br>
+      <center><a class="twitter-timeline" data-lang="en" data-width="350" data-height="500" href="https://twitter.com/NOAA?ref_src=twsrc%5Etfw">Tweets by NOAA</a> 
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <br><br><br>
+
+      <div id="fb-root"></div>
+      <center><p>Or login with your facebook account and let us know what do you think about our app!</p></center>
+      <center><script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.11';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-comments" data-href="https://www.facebook.com/NOAA/" data-numposts="5"></div></center>
+      <br><br><br><br>
+</body>

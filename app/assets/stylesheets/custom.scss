@@ -29,8 +29,17 @@ body.about{
   h1 {
     color: #40a6bf;
   }
+  h2 {
+    color: #d6f5f5;
+    font-size: 30px;
+    font-weight: bold;
+	  text-align: left;
+	  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+
+  }
   p {
     color: #d6f5f5;
+    text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
   }
 }
 
@@ -44,12 +53,18 @@ body.signup {
 }
 
 body.login {
-  background-image: url("tornado7");
+  background-image: url("tornado7.jpg");
   background-size: cover;
   h1 {
     color: #d1dbfa;
   }
 }
+
+body.contact {
+  background-image: url("tornado10.jpg");
+  background-size: cover;
+}
+
 section {
   overflow: auto;
 }
@@ -131,9 +146,14 @@ p {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%    footer    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:70px;
+  width:100%;
+  // position: absolute;
+  // bottom: 0;
+  // width: 100%;
   // margin: 20px 20px 20px;
   /* Set the fixed height of the footer here */
   // border-top: 1px solid $gray-medium-light;
