@@ -4,20 +4,19 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   
   # static pages routes
-  get  '/donate',    to: 'static_pages#donate'
   get  '/about',   to: 'static_pages#about'
   get  '/contact', to: 'static_pages#contact'
   get  '/time', to: 'chart#time'
   get  '/feed', to: 'chart#feed'
   
   # sign-up routes: show page and process form
-  get '/signup', to: 'users#new'
+  get  '/signup', to: 'users#new'
   post '/signup',  to: 'users#create'
   
   # log-in routes: show page and process form
-  get 'sessions/new'
-  get    '/login',   to: 'sessions#new'
-  post   '/login',   to: 'sessions#create'
+  get  'sessions/new'
+  get  '/login',   to: 'sessions#new'
+  post '/login',   to: 'sessions#create'
   
   # log-out routes: process the form
   delete '/logout',  to: 'sessions#destroy'

@@ -15,12 +15,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "#{@base_title1}"
   end
   
-  test "should get donate" do
-    get donate_path
-    assert_response :success
-    assert_select "title", "Donate | #{@base_title1}"
-  end
-  
   test "should get about" do
     get about_path
     assert_response :success
