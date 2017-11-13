@@ -1,15 +1,25 @@
-<!-- A partial file that links to the application layout file for the footer class
-of the website's pages (the footer text at the bottom of the pages). -->
-
 <footer class="footer">
-  <small>
-    This app uses open data from the <a href="https://earthquake.usgs.gov/">The Earthquake Hazard Program website.</a>
-    </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="https://earthquake.usgs.gov/">News</a></li>
-    </ul>
-  </nav>
+    <br>
+
+    <div class="col-sm-5">
+      <small>
+        This app uses open data from the <a href="http://www.spc.noaa.gov/wcm/">National Oceanic and Atmosferic Administration website</a>
+      </small>
+    </div>
+    
+    <div class="col-sm-2">
+      <%= image_tag("NOAA_emblem.png") %>
+    </div>
+
+    <div class="col-sm-5">
+      <ul class="social">
+        <li><a href="https://twitter.com/NOAA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+        <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FNOAA%2F&width=51&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="51" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>  
+        <li><script src="https://apis.google.com/js/platform.js"></script><div class="g-ytsubscribe" data-channel="NOAA" data-layout="default" data-count="default"></div></li>
+        <!--<li><a href="https://www.reddit.com/user/noaagov" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="//www.redditstatic.com/spreddit7.gif" alt="submit to reddit" border="0" /> </a></li>-->
+      </ul>
+    </div>
+    
 </footer>
+
+</div>

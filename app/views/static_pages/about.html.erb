@@ -2,16 +2,11 @@
 internal pages.--> 
 
 <% provide(:title, "About") %>
-
+<body class="about">
     <h1>About</h1>
-    <p>
-      This application allows users to see earthquake data in a visual form using <%= link_to "charts", time_path, :"data-turbolinks" => false %>
-      
-      and <%= link_to "live maps", feed_path, :"data-turbolinks" => false %> where you can see live earthquake data from anywhere
-      in the world. 
-      
-    </p>
-    
+    <p>This application allows users to see earthquake data in a visual form using <%= link_to "charts", time_path, :"data-turbolinks" => false %>
+    and <%= link_to "live maps", feed_path, :"data-turbolinks" => false %> where you can see live earthquake data from anywhere 
+    in the world.</p>
     <p>A user can create an account, view earthquake data and link to charity sites where donatations for 
-       <%= link_to "earthquake relief efforts", donate_path %> can be made.
-    </p>
+    <%= link_to "earthquake relief efforts", donate_path %> can be made.</p>
+</body>
