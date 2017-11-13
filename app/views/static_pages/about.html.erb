@@ -4,9 +4,15 @@ internal pages.-->
 <% provide(:title, "About") %>
 <body class="about">
     <h1>About</h1>
-    <p>This application allows users to see earthquake data in a visual form using <%= link_to "charts", time_path, :"data-turbolinks" => false %>
-    and <%= link_to "live maps", feed_path, :"data-turbolinks" => false %> where you can see live earthquake data from anywhere 
-    in the world.</p>
-    <p>A user can create an account, view earthquake data and link to charity sites where donatations for 
-    <%= link_to "earthquake relief efforts", donate_path %> can be made.</p>
+    <div class="col-sm-2">
+        <%= image_tag("NOAA_120px_width.png") %>
+    </div>
+    <div class="col-sm-10">
+        <p>NOAA is an agency that enriches life through science. Our reach goes from the surface of the sun to the depths of the ocean 
+        floor as we work to keep citizens informed of the changing environment around them. 
+        From daily weather forecasts, severe storm warnings, and climate monitoring to fisheries management, coastal restoration and supporting 
+        marine commerce, NOAA’s products and services support economic vitality and affect more than one-third of America’s gross domestic product. 
+        NOAA’s dedicated scientists use cutting-edge research and high-tech instrumentation to provide citizens, planners, emergency managers and other 
+        decision makers with reliable information they need when they need it.</p>
+    </div>
 </body>

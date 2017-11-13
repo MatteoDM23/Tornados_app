@@ -23,7 +23,7 @@ body {
 }
 
 body.about{
-  background-image: url("tornado copy.jpg");
+  background-image: url("tornado.jpg");
   // width: 100%;
   background-size: cover;
 }
@@ -83,6 +83,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: $gray-medium-light;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@  header  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
