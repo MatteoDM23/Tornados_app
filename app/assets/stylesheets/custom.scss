@@ -17,15 +17,30 @@ $dark-gray: #423324;
 body {
   padding-top: 60px;
   background-color: white;
-  background-image: url("tornado1.jpg");
+  background-image: url("tornado8.jpg");
   background-size: cover;  
   background-repeat: no-repeat;
 }
 
 body.about{
-  background-image: url("tornado.jpg");
+  background-image: url("tornado6.jpg");
   // width: 100%;
   background-size: cover;
+  h1 {
+    color: #40a6bf;
+  }
+  p {
+    color: #d6f5f5;
+  }
+}
+
+body.signup {
+    background-image: url("tornado4.jpg");
+    width: 100%;
+    height: 100%;
+  h1 {
+    color: #d1dbfa;
+  }
 }
 
 section {
@@ -65,7 +80,7 @@ h1 {
   font-weight: bold;
 	text-align: center;
 	text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
-	color: #9e712e;
+	color: #ffad33;
 	
 	/*text stroke*/
 	-webkit-text-stroke: 4px rgba(0, 0, 0, .6);
@@ -87,18 +102,21 @@ p {
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@  header  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.navbar-inverse {
+  background-color: #1a1a1a;
+}
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #ffad33;
+  color: #999999;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 19px;
   font-weight: bold;
     &:hover {
-        color: #FFD700;
+        color: #ffad33;
   text-decoration: none;
  }
 }
@@ -113,25 +131,25 @@ p {
   /* Set the fixed height of the footer here */
   // border-top: 1px solid $gray-medium-light;
   background-color: #1a1a1a;
-  a {
-  color: #ff9900;
-  &:hover {
+    a {
+    color: #ff9900;
+      &:hover {
+        color: #fff5e6;
+      }
+    }
+    small {
+    float: left;
     color: #fff5e6;
-  }
-}
-  small {
-  float: left;
-  color: #fff5e6;
-}
+    }
 
-  ul {
-  float: right;
-  list-style: none;
-  li {
-  float: left;
-  margin-left: 55px;
-  }
-}
+    ul {
+    float: right;
+    list-style: none;
+      li {
+      float: left;
+      margin-left: 55px;
+      }
+    }
 }
 
 /* ±±±±±±±±±±±±±±±±±±±±±±     miscellaneous     ±±±±±±±±±±±±±±±±±±±±±±±±§*/
@@ -226,6 +244,8 @@ img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-
-.center_jumbotron {
+// €€€€€€€€€€€€€€€€€€€€     form fields signup page    €€€€€€€€€€€€€€€€€€€€€ //
+.form-control {
+  background-color: transparent;
 }
+
