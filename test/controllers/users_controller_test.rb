@@ -2,14 +2,29 @@ require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   
-    def setup
+  def setup
+    @user = users(:michael)
+    @other_user = users(:archer)
     @base_title5 = "CS2012 Assignment 2: Earthquake Data App"
-    end
+  end
   
+
   test "should get new" do
     get signup_path
     assert_response :success
     assert_select "title", "Sign Up | #{@base_title5}"
   end
 
+  test "should redirect edit when not logged in" do
+    get edit_user_path(@user)
+    assert_not flash.empty?
+    assert_redirected_to login_url
+  end
+
+  test "should redirect update when not logged in" do
+    patch user_path(@user), params: { user: { name: @user.name,
+                                              email: @user.email } }
+    assert_not flash.empty?
+    assert_redirected_to login_url
+  end
 end
