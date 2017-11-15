@@ -18,6 +18,7 @@ gem 'jquery-ui-rails'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.7.0'
 gem "highcharts-rails"
+gem 'faker',                   '1.7.3'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
