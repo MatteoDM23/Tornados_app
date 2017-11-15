@@ -82,6 +82,26 @@ body.contact {
   }
 }
 
+body.show {
+  background-image: url("tornado11.jpg");
+  background-size: cover;
+  
+  
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10em;
+    white-space: nowrap;
+    z-index: 1000;
+    font-family: 'Bangers', cursive;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  }
+
+}
+
+
 section {
   overflow: auto;
 }
@@ -306,4 +326,16 @@ img:hover {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

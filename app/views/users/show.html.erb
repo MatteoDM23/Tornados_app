@@ -1,11 +1,27 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-</div>
+<body class="show">
+  <h1><%= gravatar_for @user %>
+  <%= @user.name %></h1>
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="user_info">
+          
+        </section>
+      </aside>
+    </div>
+
+<br><br><br>
+
+
+<!--<body class="show">-->
+<!--  <h1>Contact</h1>-->
+<!--    <div class="container"> -->
+<!--      <div class="jumbotron myBackground3">-->
+<!--        <center><h2>Do you have a Twitter account? Tweet them straight on their Twitter profile!.</h2></center>-->
+<!--        <center><a href="https://twitter.com/intent/tweet?screen_name=NOAA&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">-->
+<!--        Tweet to @NOAA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>-->
+<!--        <br>-->
+<!--        <center><a class="twitter-timeline" data-lang="en" data-width="650" data-height="500" href="https://twitter.com/NOAA?ref_src=twsrc%5Etfw">Tweets by NOAA</a> -->
+<!--        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>-->
+<!--      </div>-->
+<!--    </div>-->
