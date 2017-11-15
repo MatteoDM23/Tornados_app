@@ -1,18 +1,18 @@
 <% provide(:title, @user.name) %>
 <body class="show">
-  <h1><%= gravatar_for @user %>
-  <%= @user.name %></h1>
-    <div class="row">
-      <aside class="col-md-4">
-        <section class="user_info">
-          
-        </section>
-      </aside>
-    </div>
+  <h1><%= @user.name %></h1>
+    <center><%= image_tag("me.png") %></center>
+      <div class="row">
+        <aside class="col-md-4">
+          <section class="user_info">
+            
+          </section>
+        </aside>
+      </div>
 
 <br><br><br>
 
-
+<!--<%= gravatar_for @user %>-->
 <!--<body class="show">-->
 <!--  <h1>Contact</h1>-->
 <!--    <div class="container"> -->
