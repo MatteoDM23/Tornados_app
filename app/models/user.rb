@@ -3,10 +3,9 @@ class User < ApplicationRecord
   # User model already has a remember_digest attribute, but it doesn’t yet have a remember_token attribute. 
   # We need a way to make a token available via user.remember_token (for storage in the cookies) without storing it in the database.
   # We’ll have to write the code for a remember_token ourselves. The way to do this is to use attr_accessor to create an accessible attribute
-  attr_accessor :remember_token
-  
-  
-  before_save { self.email = email.downcase }
+  attr_accessor :remember_token, :activation_token
+  before_save   :downcase_email
+  before_create :create_activation_digest
   validates :name, presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
@@ -45,5 +44,16 @@ class User < ApplicationRecord
   def forget
     update_attribute(:remember_digest, nil)
   end
+  
+  # Converts email to all lower-case.
+    def downcase_email
+      self.email = email.downcase
+    end
+
+    # Creates and assigns the activation token and digest.
+    def create_activation_digest
+      self.activation_token  = User.new_token
+      self.activation_digest = User.digest(activation_token)
+    end
   
 end
