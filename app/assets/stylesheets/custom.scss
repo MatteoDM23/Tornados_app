@@ -14,6 +14,7 @@ $dark-gray: #423324;
 
 /* =========================== universal ============================ */
 
+/* ------ bodies------ */
 body {
   padding-top: 60px;
   background-color: white;
@@ -101,6 +102,7 @@ body.show {
 
 }
 
+/* ------  section, textarea, center ------ */
 
 section {
   overflow: auto;
@@ -123,7 +125,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-/*Fonts*/
+/*  ---  Fonts  ---  */
+
 @font-face {
 	font-family: 'Lobster13Regular';
 	src: url('Lobster_1.3-webfont.eot');
@@ -188,33 +191,61 @@ p {
   bottom:0px;
   height:70px;
   width:100%;
+  
   // position: absolute;
   // bottom: 0;
   // width: 100%;
   // margin: 20px 20px 20px;
   /* Set the fixed height of the footer here */
   // border-top: 1px solid $gray-medium-light;
+  
   background-color: #1a1a1a;
-    a {
-    color: #ff9900;
-      &:hover {
-        color: #fff5e6;
-      }
+  a {
+  color: #ff9900;
+    &:hover {
+      color: #fff5e6;
     }
-    small {
-    float: left;
-    color: #fff5e6;
-    }
+  }
+  small {
+  float: left;
+  color: #fff5e6;
+  }
 
-    ul {
-    float: right;
-    list-style: none;
-      li {
-      float: left;
-      margin-left: 55px;
-      }
+  ul {
+  float: right;
+  list-style: none;
+    li {
+    float: left;
+    margin-left: 55px;
     }
+  }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 8px;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
 }
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+  
+}
+
 
 /* ±±±±±±±±±±±±±±±±±±±±±±     miscellaneous     ±±±±±±±±±±±±±±±±±±±±±±±±§*/
 
