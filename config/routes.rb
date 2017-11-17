@@ -23,5 +23,6 @@ Rails.application.routes.draw do
   
   # resourceful routes for Create, Retrieve, Update and Destroy users
   resources :users
+  resources :account_activations, only: [:edit]
 
 end
