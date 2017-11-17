@@ -30482,3 +30482,93 @@ SessionsHelperTest: test_current_user_returns_right_user_when_session_is_nil
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 762146111], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (217.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "assignment3_test"[0m
+  [1m[35m (954.6ms)[0m  [1m[35mCREATE DATABASE "assignment3_test" ENCODING = 'SQL_ASCII'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "earthquakes" CASCADE[0m
+  [1m[35m (20.8ms)[0m  [1m[35mCREATE TABLE "earthquakes" ("id" bigserial primary key, "time" timestamp, "latitude" integer, "longitude" integer, "depth" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "mag" decimal, "place" character varying)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "password_digest" character varying, "remember_digest" character varying, "admin" boolean DEFAULT 'f', "activation_digest" character varying, "activated" boolean DEFAULT 'f', "activated_at" timestamp)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171116210710)[0m
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171011104925),
+(20171017155940),
+(20171012170916),
+(20171115232016),
+(20171012084729),
+(20171011200731),
+(20171011164447),
+(20171113211555);
+
+[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2017-11-17 01:15:35.646537"], ["updated_at", "2017-11-17 01:15:35.646537"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "earthquakes" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.5ms)[0m  [1m[31mDELETE FROM "earthquakes"[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "earthquakes" ("created_at", "updated_at", "id") VALUES ('2017-11-17 01:15:35.900153', '2017-11-17 01:15:35.900153', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "earthquakes" ("created_at", "updated_at", "id") VALUES ('2017-11-17 01:15:35.900153', '2017-11-17 01:15:35.900153', 298486374)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mselect MAX("id") from "earthquakes"[0m
+  [1m[36mFixture Delete (0.5ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "admin", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Michael Example', 'michael@example.com', '$2a$04$zsB6EKDkAVUOG.HEUAhAUexqj0sYTAmvZ2RSbJ.V0s/3Cu0Na0lxi', 't', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 762146111)[0m
+  [1m[36mFixture Insert (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Sterling Archer', 'duchess@example.gov', '$2a$04$lKbs9uiuwRF0isHYrLxrCe8PDT0caJ1nXuzJbsD.ncJpVTMYrpU5O', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 950961012)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Lana Kane', 'hands@example.gov', '$2a$04$q3R3lBDU4dja8CIhYs7DKeeUGrVXjSoCBa0/8BuRy7jQj/oscr2kG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 409608538)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Malory Archer', 'boss@example.gov', '$2a$04$QJpNqZIq7ZwIa6tu8FxJGuqDdZYXjC.5jrGCvB.r.M7IUnpl1WuLq', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 659682706)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 0', 'user-0@example.com', '$2a$04$ijF582Zc17rBaTy.hOGHpeUAPsDOZDjq6atQo2y2ii6iOSRAcUfwm', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 338193910)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 1', 'user-1@example.com', '$2a$04$cuj2bagJ9/sNdbBzgS7p1uChNFsjG3aZErTf8RUONDK9NuVPwwapO', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 590306657)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 2', 'user-2@example.com', '$2a$04$H8MCuhgmekjmYtdb7AHNTOGsnoPP6UPC9ACkIu8ai6idfDJmo/Q2C', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 975572189)[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 3', 'user-3@example.com', '$2a$04$yFUzMXNuJqNnzwIrXjDsHuMYO8FJeygdVYHd81eL6IcdM1GgenXV.', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 220281934)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 4', 'user-4@example.com', '$2a$04$u58wdHL8/Jcht0ZfsnhcbOCRsaWUrMc3QMP3SkQnifRlGN1nnYtQO', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 323332591)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 5', 'user-5@example.com', '$2a$04$3t9W/4iFfXdnlSuR2yZLH.26jkx17v7AtJFUANf4myVKKEvUp/yru', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 608344442)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 6', 'user-6@example.com', '$2a$04$E01JGt0FCJGxPBEQLLe7kOX5uUNS3GM1vATHQQtpSszXhos.nTMBS', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 1028376774)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 7', 'user-7@example.com', '$2a$04$tB8NXuoj/6u.CPVmuxBmAe4iarTXQ13a7QqfR09rVAW6dMYmNB3T2', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 172816471)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 8', 'user-8@example.com', '$2a$04$Fk3eH5BpRvlsp05hDd9EQuG/A5juzFvHLUVstzXBphXDQ1VPyh0pS', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 452191684)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 9', 'user-9@example.com', '$2a$04$g9vNOD.LErvJtbf7PMSSguxmlhTLOy8CbEATbg40tw5Whx/5LRIfG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 771020115)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 10', 'user-10@example.com', '$2a$04$8qNJjKYwMR9liCSQqnF.j.hsW4ZQxanKu.cdLXSYznq7/UsNNOTnG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 956993830)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 11', 'user-11@example.com', '$2a$04$nEM6Ba0tuMOZPvyBhk7ble9Oo5DtGlTxN2dvlvKXB4hYpJYA7.K0O', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 235774389)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 12', 'user-12@example.com', '$2a$04$vfHJTkPzLup1OJUR2aP..erElSPjOQ5rPimxny7Pnn4oYv9R0OrfW', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 386199561)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 13', 'user-13@example.com', '$2a$04$O6WSxwYfZ2KyRXPvhGeXHOdhtcQnAOf4R3YINJ7XCIO78aEXJbOMe', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 537116830)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 14', 'user-14@example.com', '$2a$04$5Wmos2jvYI8w.QR9SsJTper1/bcg6GYMShjjrhYyjjXnRQMrzfKxO', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 1046959423)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 15', 'user-15@example.com', '$2a$04$1qBQY8wBRNgl9.mUAVGb3.K6NlM48PHsMEkLFvw7Zoq9pI6/Exzvq', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 157312430)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 16', 'user-16@example.com', '$2a$04$FbvNEsKClEIoBsy.8w8yRu/jqPswgak6k6ihOPrtbRMw9OoEcNIQu', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 275330066)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 17', 'user-17@example.com', '$2a$04$l468/MAYHyLBcv3n03hvJ.tfOrcSAQckz4p7Re.ng4GPmRQSeKV8q', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 661521543)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 18', 'user-18@example.com', '$2a$04$jBSbcMbWTCuPPzR/y7VNOeJwXQV24aPq5iO6Yvu7aAod4apQDVYDy', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 936450328)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 19', 'user-19@example.com', '$2a$04$aornsR5sXtUiGFSnOHmP8.5SZe72kWJOVUbKh9WDBF7NF21T9c.Nm', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 14035331)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 20', 'user-20@example.com', '$2a$04$gLNy7Zg2nAs9bDsUgA7lau5aPXhMwL7Rhav7qjAEhi3uMB63JYPRC', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 304595689)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 21', 'user-21@example.com', '$2a$04$5z/NjTFfCOvbaCC.hvQYBeu0WFwSnTDTA8IF9bFHMP290v6TFtFke', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 622916212)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 22', 'user-22@example.com', '$2a$04$fwF7CfxDFdQfwzH9DviqWuQ/g2xuFkOiW5chxah8MMZxQiTloMsjK', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 1009361868)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 23', 'user-23@example.com', '$2a$04$f54nMymcVcasTC/hrkH9A.9.UAkqgJs/AtslZWkVGD7XcZKTtx52W', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 187601757)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 24', 'user-24@example.com', '$2a$04$2fBW7r8QfNwtG1wYw4VcpedrLHBaG/u0SiHdKvIXakgwVl6muSHPm', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 357172992)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 25', 'user-25@example.com', '$2a$04$6vJ.6u89DL3.Y0aZBcVoVetv.8rnJDVvvZFqs7hu0HyuEP3ufHiLG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 575485547)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 26', 'user-26@example.com', '$2a$04$N7OBlJBSaIqnwQVPOavKRud6iuE6q8bdOnC2CcxAIUzZXXwGooeXG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 994338771)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 27', 'user-27@example.com', '$2a$04$QQgxCqLIgYj5b7/7CZU68OKaI0Qnl1H9ooriirNYZyetItC6W3gp6', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 205739844)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 28', 'user-28@example.com', '$2a$04$j2P0myeblzNFjOxyr.hAB.y1kj/88PybvYYky8r98FBrlJ8GB2vJu', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 486296279)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 29', 'user-29@example.com', '$2a$04$2Ndt2xOvafSZAwGtZEbtmeFoq4IpDUt.fsYbXcfD.6oJ13Tm8VrLG', 't', '2017-11-17 01:15:35 UTC', '2017-11-17 01:15:35.915436', '2017-11-17 01:15:35.915436', 737901126)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mselect MAX("id") from "users"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "earthquakes" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------
+UserMailerTest: test_account_activation
+---------------------------------------
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 762146111], ["LIMIT", 1]]
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (3.8ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.8ms)
+UserMailer#account_activation: processed outbound mail in 22.6ms
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
