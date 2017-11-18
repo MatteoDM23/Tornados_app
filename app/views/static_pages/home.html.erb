@@ -1,14 +1,75 @@
-<!-- This is the content of the home page view using HTML and Bootstrap.-->
-
-<div class="center_jumbotron">
-  <br><br>
   <h1>THE TORNADOS APP</h1>
-  <center><p>Welcome to our Tornados application. 
-  Sign up to access our charts of the latest preliminary severe storm reports and annual summaries.</p></center>
-  <br><br>
-  <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-warning" %></center>
-  <br>
+  <!--<Welcome to our Tornados application. -->
+  <div class="container">
+	<div class="row">
+		<div id="carousel-home" class="carousel slide carousel-fade carousel-animate carousel-bg carousel-bg-img-xs"
+		data-ride="carousel" style="width: 75%; height:auto; margin: 0 auto">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-home" data-slide-to="1"></li>
+				<li data-target="#carousel-home" data-slide-to="2"></li>
+			</ol>
+			<!-- First Image -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active flex-center-xs" style="background-image">
+				<%= link_to image_tag("carosel-1.jpg", alt: "football")%>
+					<div class="carousel-caption flex-center-xs">
+						<div class="hero fadeInUp animated">
+							<!--<h1>welcome to the football results app</h1>-->
+							<button class="btn btn-hero btn-lg zoomIn animated"
+								onclick="window.location.href='/signup'"><span>learn about tornadoes</span></button>
+
+						</div>
+					</div>
+				</div>
+				<!-- Second Image -->
+				<div class="item flex-center-xs" style="background-image">
+				<%=link_to image_tag("carosel-2", alt: "laptop")%>
+					<div class="carousel-caption flex-center-xs">
+						<div class="hero fadeInUp animated">
+							<!--<h1>about the app</h1>-->
+							<button class="btn btn-hero btn-lg zoomIn animated"
+							onclick="window.location.href='/about'"><span>who we are</span></button>
+						</div>
+					</div>
+				</div>
+				<!-- Third Image -->
+				<div class="item flex-center-xs" style="background-image">
+					<%=link_to image_tag("city-london-england", alt: "contact us")%>
+					<div class="carousel-caption flex-center-xs">
+						<div class="hero fadeInUp animated">
+							<!--<h1>contact us</h1>-->
+							<button class="btn btn-hero btn-lg zoomIn animated"
+							onclick="window.location.href='/contact'"><span>share your experience</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Backward</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Forward</span>
+			</a>
+		</div>
+	</div>
 </div>
+
+<br><br><br>
+
+<div class="container"> 
+  <div class="jumbotron myBackground3">
+    <center><p>Sign up to access our charts of the latest preliminary severe storm reports charts</p></center>
+    <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-warning" %></center>
+  </div>
+</div>
+
+
+<br><br><br><br><br>
 
 
 
