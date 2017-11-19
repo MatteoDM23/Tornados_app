@@ -427,7 +427,7 @@ padding: 10px 40px;
   opacity: 0.8;
   border: none;
   text-align: center;
-  transition: 10s;
+  transition: 10.0s;
   cursor: pointer;
   margin: 20px auto;
   text-transform: uppercase;
@@ -436,14 +436,14 @@ padding: 10px 40px;
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 10s;
+    transition: 10.0s;
     &:after {
       content: '\00bb';
       position: absolute;
       opacity: 0;
       top: 0;
       right: -20px;
-      transition: 10s;
+      transition: 10.0s;
     }
   }
   &:hover span {
