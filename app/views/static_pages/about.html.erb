@@ -1,15 +1,14 @@
-<!-- This is the view page for the "About" link. It features a brief description of what the site entails and links to 
-internal pages.--> 
-
 <% provide(:title, "About") %>
+<br>
 <body class="about">
-    <h1>About us</h1>
-    <br><br>
     <div class="container"> 
         <div class="jumbotron myBackground">
             <div class="row">
                 <div class="col-sm-3">
-                    <%= image_tag("NOAA_160px.png") %>
+                    <center><%= image_tag("NOAA_160px.png") %></center>
+                    <br><br><br>
+                    <center><a href="https://twitter.com/intent/tweet?screen_name=NOAA&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">
+                    Tweet to @NOAA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
                 </div>
                 <div class="col-sm-9">
                     <h2>NOAA</h2>
@@ -20,18 +19,26 @@ internal pages.-->
                     marine commerce, NOAA’s products and services support economic vitality and affect more than one-third of America’s gross domestic product. 
                     NOAA’s dedicated scientists use cutting-edge research and high-tech instrumentation to provide citizens, planners, emergency managers and other 
                     decision makers with reliable information they need when they need it.</p>
+                    <br>
+                    <ul class="social">
+                    <center>
+                        <li><a href="https://twitter.com/NOAA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.facebook.com/NOAA/" class="fa fa-facebook"></a></li>  
+                        <li><a href="https://www.youtube.com/channel/UCe9IxQeBttZIYl5c43ycf9g" class="fa fa-youtube"></a></li>
+                        <li><a href="https://uk.linkedin.com/company/noaa" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/noaa/?hl=en" class="fa fa-instagram"></a></li>
+                    </center>
+                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    
-        <br><br><br>
-        
+<br>
     <div class="container"> 
         <div class="jumbotron myBackground">
             <div class="row">
                 <div class="col-sm-3">
-                    <%= image_tag("me.png") %>
+                    <center><%= image_tag("me.png") %></center>
                 </div>
                 <div class="col-sm-9">
                     <h2>Our website developer</h2>
@@ -50,7 +57,5 @@ internal pages.-->
             </div>
         </div>
     </div>
-    
-    <br><br><br><br>
-    
+<br><br><br><br>
 </body>
