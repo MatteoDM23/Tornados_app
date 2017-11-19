@@ -19,7 +19,7 @@ $dark-gray: #423324;
 body {
   padding-top: 60px;
   background-color: white;
-  background-image: url("tornado8.jpg");
+  background-image: url("tornado8copy.jpg");
   background-size: cover;  
   background-repeat: no-repeat;
 }
@@ -52,8 +52,56 @@ body.about{
     font-size: 15px;
   }
   .myBackground {
-    background-color: rgba(117,171,189, 0.5);
+    background-color: rgba(117,171,189, 0.6);
     color: inherit;
+    ul {
+  float: right;
+  list-style: none;
+    li {
+    float: left;
+    margin-left: 55px;
+    }
+  }
+  
+  .fa {
+    padding: 8px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+/* Social icons hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  }
+  
+  .fa-youtube {
+  background: #bb0000;
+  color: white;
+  }
+  
+  .fa-linkedin {
+  background: #007bb5;
+  color: white;
+  }
+
+  .fa-instagram {
+  background: #125688;
+  color: white;
+  }
+  
   }
 }
 
@@ -81,14 +129,29 @@ body.contact {
   background-image: url("tornado10.jpg");
   background-size: cover;
   .myBackground2 {
-    background-color: rgba(251,247,234, 0.2);
+    background-color: rgba(251,247,234, 0.5);
     color: inherit;
   }
 
   h2 {
-    font-size: 25px;
-    text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+    color: #302a25;
+    font-size: 30px;
+    font-weight: bold;
+	  text-align: left;
+	  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+
   }
+  dt {
+    color: #474645;
+    text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+    font-size: 17px;
+  }
+  
+  dd {
+    margin-left: 50px;
+    margin-right: 30px;
+  }
+  
 }
 
 body.show {
@@ -210,7 +273,6 @@ p {
   float: left;
   color: #fff5e6;
   }
-
   ul {
   float: right;
   list-style: none;
@@ -219,48 +281,6 @@ p {
     margin-left: 55px;
     }
   }
-
-/* Social icons */
-.fa {
-    padding: 8px;
-    font-size: 15px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-/* Social icons hover effect */
-.fa:hover {
-    opacity: 0.7;
-  }
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  }
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-  }
-  
-  .fa-youtube {
-  background: #bb0000;
-  color: white;
-  }
-  
-  .fa-linkedin {
-  background: #007bb5;
-  color: white;
-  }
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-  }
-
-
 
 }
 
@@ -427,7 +447,7 @@ padding: 10px 40px;
   opacity: 0.8;
   border: none;
   text-align: center;
-  transition: 10s;
+  transition: 10.0s;
   cursor: pointer;
   margin: 20px auto;
   text-transform: uppercase;
@@ -436,14 +456,14 @@ padding: 10px 40px;
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 10s;
+    transition: 10.0s;
     &:after {
       content: '\00bb';
       position: absolute;
       opacity: 0;
       top: 0;
       right: -20px;
-      transition: 10s;
+      transition: 10.0s;
     }
   }
   &:hover span {
