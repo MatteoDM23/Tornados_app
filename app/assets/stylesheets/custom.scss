@@ -103,6 +103,43 @@ body.about{
   }
   
   }
+  
+  .btn.btn-hero {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #75b3c4;
+  color: #555;
+  opacity: 0.8;
+  border: none;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 20px auto;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  & span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    &:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+      }
+    }
+  &:hover span {
+    padding-right: 15px;
+    &:after {
+      opacity: 1;
+      right: 0;
+      }
+    }
+  }
+
 }
 
 
@@ -139,8 +176,8 @@ body.contact {
   font-weight: bold;
   text-align: left;
   text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
-
   }
+  
   dt {
   color: $gray-medium-light;
   text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
@@ -189,7 +226,34 @@ body.feed {
   background-image: url("tornado11.jpg");
   background-size: cover;
   h1 {
+  color: #d1dbfa;
+  }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+  }
+}
+
+body.time {
+  color: #7a7b7c;
+  background-image: url("tornado11.jpg");
+  background-size: cover;
+  h1 {
     color: #d1dbfa;
+  }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+  }
+  .myBackground4 {
+  background-color: rgba(131,132,135, 0.6);
+  color: inherit;
   }
 }
 
@@ -240,14 +304,14 @@ h1 {
 	-webkit-text-stroke: 4px rgba(0, 0, 0, .6);
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $dark-gray;
-}
+// h2 {
+//   font-size: 1.2em;
+//   letter-spacing: -1px;
+//   margin-bottom: 30px;
+//   text-align: center;
+//   font-weight: normal;
+//   color: $dark-gray;
+// }
 
 p {
   font-size: 1.1em;
@@ -468,7 +532,7 @@ img:hover {
   opacity: 0.8;
   border: none;
   text-align: center;
-  transition: 10.0s;
+  transition: 0.5s;
   cursor: pointer;
   margin: 20px auto;
   text-transform: uppercase;
@@ -477,14 +541,14 @@ img:hover {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 10.0s;
+    transition: 0.5s;
     &:after {
       content: '\00bb';
       position: absolute;
       opacity: 0;
       top: 0;
       right: -20px;
-      transition: 10.0s;
+      transition: 0.5s;
     }
   }
   &:hover span {

@@ -1,7 +1,24 @@
 <% provide(:title, "Feed") %>
 <body class="feed">
+    <h2>Tornadoes - Annual 2016</h2>
     <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
-    <h3 id="live-label">Live feed of all the tornados affecting the USA in 2016 <span id="result-count"></span></h3>
+        <p>Similar to the previous four years, tornado activity across the U.S. during 2016 was below average. 
+        During January-August, there were 843 confirmed tornado reports, with 142 reports still pending for September-December. 
+        This brings the 2016 preliminary tornado count to 985, with the final count expected to be lower. 
+        As with most years, there were several large and destructive tornado and severe weather outbreaks during 2016.</p>
+        <br><center><%= image_tag("2016_annual_map_torn.gif", :alt => "rss feed") %></center><br><br>
+        <p>The deadliest tornado outbreaks of the year occurred in late February and in November, 
+        with strong tornadoes striking across the South, killing seven and five people, respectively. 
+        In 2016, there were eight severe weather outbreaks that caused damages exceeding one billion U.S. dollars 
+        [see our report 2016 for further details].</p>
+        <p>With the exception of February, each month had a near- to below-average number of tornadoes. 
+        In February, there were 102 confirmed tornadoes, above the 1991-2010 average of 29. 
+        In June, there were 86 confirmed tornadoes, much less than the average of 243.
+        At a statewide level, the number of tornadoes for the year was at least double the average in Alabama (87 vs 44) and 
+        Indiana (40 vs 22), but less than half in North Carolina (16 vs 31), South Dakota (16 vs 36) and Tennessee (10 vs 26).</p>
+    <br><br>
+    <h2 id="live-label">Live feed of all the tornados affecting the USA in 2016 <span id="result-count"></span></h2><br>
+    <br>
     <div class="top-row">
         <div class="location-input filter-option">
             <input id="place-input" class="controls" type="text" placeholder="Enter a location">
@@ -16,3 +33,4 @@
     </div>
     <div id="feedMap" style="width: 100%; height: 600px;"></div><br><br><br><br><br><br>
 </body>
+
