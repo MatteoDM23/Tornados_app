@@ -17,7 +17,8 @@ starttime = minusFiveFormatted;
 endtime = todayFormatted;
 
 function buildMap() {
-  var url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+starttime+"&endtime="+endtime+"&limit="+limit;
+  //var url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+starttime+"&endtime="+endtime+"&limit="+limit;
+  var url = "http://www.spc.noaa.gov/wcm/data/2016_torn.csv";
   if (typeof lat != 0 && lon != 0) {
     url += "&latitude="+lat+"&longitude="+lon+"&maxradiuskm="+radius;
   }
@@ -29,35 +30,43 @@ function buildMap() {
   console.log(url);
   
   $.get(url, function(data) {
-      console.log(data);
       
-      var heatMapData = [];
-      var earthquakeData = data.features;
+      var lines = data.split("\n");
+      
+      var tornadoData = [];
+      $.each(lines, function(key, value) {
+          var headings = lines[0].split(",");
+          
+          var object = {};
+          if (key > 0) {
+            $.each(headings, function(keyRow, val){
+              var splitValue = lines[key].split(",");
+              object[val] = splitValue[keyRow];
+            });
+            tornadoData.push(object);
+          }
+      });
       
       //Fill results label
-      $("#result-count").text("(" + earthquakeData.length + " results)");
+      $("#result-count").text("(" + tornadoData.length + " results)");
       
-      $.each(earthquakeData, function( index, value ) {
-        var item = {
-            location: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
-            weight: value.properties.mag
+      var heatMapData = [];
+      $.each(tornadoData, function( index, value ) {
+        if (typeof value.slat != "undefined" && typeof value.slon != "undefined") {
+          var item = {
+              location: new google.maps.LatLng(value.slat, value.slon),
+          }
         }
         heatMapData.push(item);
       });
       
-      var sanFrancisco = new google.maps.LatLng(lat, lon);
+      var usa = new google.maps.LatLng(37.090240, -95.712891);
       
       //Set Zoomlevel
       var zoomlevel = 2;
-      if (typeof lat != 0 && lon != 0) {
-        zoomlevel = 12;
-        if (radius > 200) {
-            zoomlevel = radius / 200;
-        }
-      }
       
       map = new google.maps.Map(document.getElementById('feedMap'), {
-        center: sanFrancisco,
+        center: usa,
         zoom: zoomlevel,
         mapTypeId: 'satellite'
       });
