@@ -24,7 +24,7 @@ if (window.location.pathname.indexOf("feed") == -1) {
                 enabled: false
             },
             title: {
-                text: 'Million $ los over time in 2016'
+                text: 'Million $ loss over time in 2016'
             },
             xAxis: {
                 type: 'datetime',

@@ -1,61 +1,60 @@
-  <center><h1>THE TORNADOS APP</h1></center>
-  <!--<Welcome to our Tornados application. -->
+ <center><h1>THE TORNADOS APP</h1></center>
   <div class="container">
-	<div class="row">
-		<div id="carousel-home" class="carousel slide carousel-fade carousel-animate carousel-bg carousel-bg-img-xs"
+	<!--<div class="row">-->
+	<div id="carousel-home" class="carousel slide carousel-fade carousel-animate carousel-bg carousel-bg-img-xs"
 		data-ride="carousel" style="width: 85%; height:auto; margin: 0 auto">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-home" data-slide-to="1"></li>
-				<li data-target="#carousel-home" data-slide-to="2"></li>
-			</ol>
-			<!-- First Image -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active flex-center-xs" style="background-image">
-				<%= link_to image_tag("carosel-1.jpg", alt: "football")%>
-					<div class="carousel-caption flex-center-xs">
-						<div class="hero fadeInUp animated">
-							<button class="btn btn-hero btn-lg zoomIn animated"
-								onclick="window.location.href='/learn'"><span>learn about tornadoes</span></button>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-home" data-slide-to="1"></li>
+			<li data-target="#carousel-home" data-slide-to="2"></li>
+		</ol>
+		<!-- First Image -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active flex-center-xs" style="background-image">
+			<%= link_to image_tag("carosel-1.jpg", alt: "football")%>
+				<div class="carousel-caption flex-center-xs">
+					<div class="hero fadeInUp animated">
+						<button class="btn btn-hero btn-lg zoomIn animated"
+							onclick="window.location.href='/learn'"><span>learn about tornadoes</span></button>
 
-						</div>
-					</div>
-				</div>
-				<!-- Second Image -->
-				<div class="item flex-center-xs" style="background-image">
-				<%=link_to image_tag("carosel-2", alt: "laptop")%>
-					<div class="carousel-caption flex-center-xs">
-						<div class="hero fadeInUp animated">
-							<!--<h1>about the app</h1>-->
-							<button class="btn btn-hero btn-lg zoomIn animated"
-							onclick="window.location.href='/about'"><span>who we are</span></button>
-						</div>
-					</div>
-				</div>
-				<!-- Third Image -->
-				<div class="item flex-center-xs" style="background-image">
-					<%=link_to image_tag("city-london-england", alt: "contact us")%>
-					<div class="carousel-caption flex-center-xs">
-						<div class="hero fadeInUp animated">
-							<!--<h1>contact us</h1>-->
-							<button class="btn btn-hero btn-lg zoomIn animated"
-							onclick="window.location.href='/signup'"><span>view our annual report</span></button>
-						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Backward</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Forward</span>
-			</a>
+			<!-- Second Image -->
+			<div class="item flex-center-xs" style="background-image">
+			<%=link_to image_tag("carosel-2", alt: "laptop")%>
+				<div class="carousel-caption flex-center-xs">
+					<div class="hero fadeInUp animated">
+						<!--<h1>about the app</h1>-->
+						<button class="btn btn-hero btn-lg zoomIn animated"
+						onclick="window.location.href='/about'"><span>who we are</span></button>
+					</div>
+				</div>
+			</div>
+			<!-- Third Image -->
+			<div class="item flex-center-xs" style="background-image">
+				<%=link_to image_tag("city-london-england", alt: "contact us")%>
+				<div class="carousel-caption flex-center-xs">
+					<div class="hero fadeInUp animated">
+						<!--<h1>contact us</h1>-->
+						<button class="btn btn-hero btn-lg zoomIn animated"
+						onclick="window.location.href='/signup'"><span>view our annual report</span></button>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Backward</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Forward</span>
+		</a>
 	</div>
+	<!--</div>-->
 </div>
 
 <br><br><br>
