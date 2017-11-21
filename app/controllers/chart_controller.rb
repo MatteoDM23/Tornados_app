@@ -6,8 +6,11 @@ class ChartController < ApplicationController
   end
   
   def time
+    @number_of_tornadoes = Tornado.where(:st => "AL").count
   end
 
   def feed
   end
+  
+  
 end
