@@ -1,3 +1,4 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 <% provide(:title, "Feed") %>
 <!--<body class="time">-->
 <!--    <h1>Chart over time</h1>-->
@@ -7,22 +8,65 @@
 <!--</body>-->
 
 <body class="time">
+    <!-- chart 1: tornadoes/days -->
+    <div class="container"> 
+      <div class="jumbotron myBackground4">
+        <h2>USA tornadoes of 2016 - Tornadoes per day</h2>
+        <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+        <%= line_chart Tornado.group_by_day(:date).count %>
+        <%= @number_of_tornadoes %>
+      </div>
+    </div>
+    <br>
+    <!-- chart 2: tornadoes/months -->
     <div class="container"> 
       <div class="jumbotron myBackground4">
         <h2>USA tornadoes of 2016 - Report</h2>
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-        <!--<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
-        <%= content_tag "div", id: "items", data: {url: Tornado.order('date ASC') } do %>
-        <% end %>
+        <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+        <%= line_chart Tornado.group_by_month(:date).count %>
+        <%= @number_of_tornadoes %>
       </div>
     </div>
-
-<br>
+    <br>
     <div class="container"> 
+    <!-- chart 3: tornadoes/days per state -->
       <div class="jumbotron myBackground4">
-      <%= line_chart Tornado.group_by_day(:date).count %>
-      <%= @number_of_tornadoes %>
+        <h2>USA tornadoes of 2016 - Tornadoes per day</h2>
+        
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <%= form_tag time_path do %>
+              <%= text_field_tag :state, nil, placeholder: "Select State" %>
+              <%= submit_tag "Submit", class: "btn btn-primary" %>
+            <% end %>
+          </div>
+        </div>
+        
+        <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+        <%= line_chart Tornado.where(:st => @state).group_by_day(:date).count %>
+        <%= @number_of_tornadoes %>
       </div>
     </div>
+    <br>
+
+    <!--<div class="container"> -->
+    <!--  <div class="jumbotron myBackground4">-->
+    <!--    <h2>Million $ loss over 2016</h2>-->
+    <!--    <p>The following chart reports the distribution of million $ loss over time in 2016 in USA</p>-->
+    <!--    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+        <!--<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+    <!--    <%= content_tag "div", id: "items", data: {url: Tornado.order('date ASC') } do %>-->
+    <!--    <% end %>-->
+    <!--  </div>-->
+    </div>
+    <br>
+    <!--<div class="container"> -->
+    <!--  <div class="jumbotron myBackground4">-->
+    <!--    <h2>USA tornadoes of 2016 - Report</h2>-->
+    <!--    <%= geo_chart Tornado.group(:st).count %>-->
+    <!--  </div>-->
+    <!--</div>-->
+
     
+
 </body>
