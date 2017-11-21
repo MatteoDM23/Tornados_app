@@ -21,6 +21,8 @@ gem "highcharts-rails"
 gem 'faker',                   '1.7.3'
 gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'chartkick'
+gem 'groupdate'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
