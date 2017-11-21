@@ -6,7 +6,7 @@ class ChartController < ApplicationController
   end
   
   def time
-    
+  
     @state = "#{params[:state]}"
   end
 
