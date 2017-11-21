@@ -6,7 +6,7 @@ class ChartController < ApplicationController
   end
   
   def time
-    @number_of_tornadoes = Tornado.where(:st => "AL").count
+    @state = "#{params[:state]}"
   end
 
   def feed
