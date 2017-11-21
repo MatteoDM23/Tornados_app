@@ -16,7 +16,13 @@
         <% end %>
       </div>
     </div>
-</body>
 
 <br>
-
+    <div class="container"> 
+      <div class="jumbotron myBackground4">
+      <%= line_chart Tornado.group_by_day(:date).count %>
+      <%= @number_of_tornadoes %>
+      </div>
+    </div>
+    
+</body>

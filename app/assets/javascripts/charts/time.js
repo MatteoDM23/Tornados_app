@@ -41,6 +41,20 @@ if (window.location.pathname.indexOf("feed") == -1) {
             legend: {
                 enabled: false
             },
+            tooltip : {
+                formatter: function() {
+                    var index = this.point.index;
+                    console.log(chartData[index][2]);
+                    
+                    var tooltip = '<div class="tooltip-main">';
+                    tooltip += '<h3>'+chartData[index][2]+'</h3><br>';
+                    tooltip += '<div class="label">Time: '+new Date(chartData[index][0])+'</div><br>';
+                    tooltip += '<div class="label">Million$: '+chartData[index][1]+'</div><br>';
+                    tooltip += '</div>';
+                    
+                    return tooltip;
+                }
+            },
             series: [{
                 type: 'area',
                 name: 'Magnitude',
