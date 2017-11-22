@@ -215,8 +215,22 @@ body.index {
   }
 }
 
+body.update {
+  .myBackground {
+    background-color: rgba(242,245,249, 0.1);
+    color: inherit;
+  }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+  }
+}
+
 body.feed {
-  color: #7a7b7c;
+  // color: #7a7b7c;
   background-image: url("tornado11.jpg");
   background-size: cover;
   h1 {
@@ -230,7 +244,7 @@ body.feed {
   text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
   }
   .myBackground4 {
-  background-color: rgba(242,245,249, 0.4);
+  background-color: rgba(242,245,249, 0.5);
   color: inherit;
   }
 }
@@ -250,7 +264,7 @@ body.time {
   text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
   }
   .myBackground4 {
-  background-color: rgba(242,245,249, 0.4);
+  background-color: rgba(242,245,249, 0.5);
   color: inherit;
   }
 }
