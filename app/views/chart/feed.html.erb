@@ -1,46 +1,53 @@
 <% provide(:title, "Feed") %>
 <body class="feed">
-    <h2>Tornadoes - Annual 2016</h2>
+    <h2>Tornadoes - Annual 2016 - part 1</h2>
     <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
     <p>Similar to the previous four years, tornado activity across the U.S. during 2016 was below average. 
     During January-August, there were 943 confirmed tornado reports, with 142 reports still pending for September-December. 
     This brings the 2016 preliminary tornado count to 1085, with the final count expected to be lower. 
-    As with most years, there were several large and destructive tornado and severe weather outbreaks during 2016.</p>
-    <br><center><%= image_tag("2016_annual_map_torn.gif", :alt => "rss feed") %></center><br><br>
+    As with most years, there were several large and destructive tornado and severe weather outbreaks during 2016.</p><br>
+    
     <!-- chart 1: google map -->
-    <h2 id="live-label">Tornadoes 2016 in USA - Heat Map <span id="result-count"></span></h2><br>
-    <br>
-    <div class="top-row">
-        <div class="location-input filter-option">
-            <input id="place-input" class="controls" type="text" placeholder="Enter a location">
-        </div>
-        <div class="filter-option magnitude">
-            <div class="magnitude-label">min magnitude: 0</div>
-            <div id="magnitude"></div>
-        </div>
-        <div class="filter-option search">
-            <button id="start-feed-search">Get Live Results</button>
-        </div>
-    </div>
+    <h2 id="live-label">Tornadoes 2016 in USA - Heat Map <span id="result-count"></span></h2>
+    <p>The map below shows a heat map of large tornadoes that have occurred in USA in 2016.</p>
     <div id="feedMap" style="width: 100%; height: 600px;"></div><br><br>
+    
     <!-- chart 2: barchart tornadoes/state -->
-    <div class="container"> 
-        <div class="jumbotron myBackground4">
-            <h2>USA tornadoes of 2016 - Report</h2>
-            <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
-            <%= bar_chart Tornado.group(:st).sum(:om), id: "users-chart", width: "1020px", height: "700px" %>
-        </div>
+    <h2>USA tornadoes of 2016</h2>
+    <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+    <div class="jumbotron myBackground4">
+        <p><b>USA tornadoes 2016</b></p>
+        <%= bar_chart Tornado.group(:st).count, id: "users-chart", width: "1020px", height: "700px", xtitle: "Total number of tornadoes", ytitle: "State" %>
     </div>
     <br>
-    <div class="container"> 
-        <div class="jumbotron myBackground4">
-            <h2>USA tornadoes of 2016 - Report</h2>
-            <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
-            <%= pie_chart Tornado.group(:st).count, id: "users-chart2", width: "1020px", height: "500px" %>
+    
+    <!-- chart 3: tornadoes/days per state -->
+    <h2>USA tornadoes of 2016 by state</h2>
+    <p>The following charts display information about the tornadoes trend in 2016 by State, with details of frrequency and F-scale respectively.</p>
+    <div class="jumbotron myBackground4">
+        
+     <p><b>Statistics by State</b></p>
+     <!-- drop down menu code -->
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <p>Type in State abbreviation</p>
+            <%= form_tag feed_path do |f| %>
+            <%= text_field_tag :state, nil, placeholder: "Select State", class: 'form-control' %>
+            <%= submit_tag "Get Statistics", class: "btn btn-primary" %>
+            <% end %>
         </div>
+      </div><br>
+      <p><%= @text %></p>
+      <br>
+      <p><b>Tornadoes trend in 2016</b></p>
+      <%= line_chart Tornado.where(:st => @state).group_by_day(:date).count, xtitle: "Time", ytitle: "Number of tornadoes" %>
+      <br>
+      <p><b>F-scale trend chart</b></p>
+      <%= bar_chart Tornado.where(:st => @state).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "700px", xtitle: "F-scale", ytitle: "Date" %>
+      <br>
+      
+      
     </div>
-    <br>
-
     <br><br><br><br>
 </body>
 
