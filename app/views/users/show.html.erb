@@ -1,12 +1,13 @@
 <% provide(:title, @user.name) %>
 <body class="show">
-  <h1><%= @user.name %></h1>
-  <div class="row">
-      <div class="col-md-6 col-md-offset-3">      
-        <%= gravatar_for @user %>
-        <p>Dear <%= @user.name %>,</p>
-        <p>you registered to the TORNADO app using <%= @user.email %> email</p>
-      </div>
-  </div>
+    <div class="jumbotron myBackground">
+        <h2><%= @user.name %></h2><br>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">      
+              <%= gravatar_for @user %>
+              <p>Dear <%= @user.name %>, you registered to the TORNADO app using <%= @user.email %> email</p>
+            </div>
+        </div>
+    </div>
 </body>
 <br><br><br>

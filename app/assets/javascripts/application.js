@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery-ui
-//= require turbolinks
+//= require jquery_ujs
 //= require highcharts
 //= require highcharts/highcharts-more
 //= require rails-ujs
@@ -20,3 +20,4 @@
 //= require chartkick
 //= require_tree .
 //= require bootstrap
+//= require turbolinks

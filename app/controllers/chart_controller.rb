@@ -6,11 +6,16 @@ class ChartController < ApplicationController
   end
   
   def time
-    @state = "#{params[:state]}"
+   
   end
 
   def feed
+     @state = params[:state]
+     if @state != nil
+      @text = "Total number of tornadoes in #{@state} in 2016 is:#{Tornado.where(:st => @state).count}"
+     else
+      @text = "No State has been selected"
+     end
   end
-  
-  
+
 end

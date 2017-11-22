@@ -4,7 +4,7 @@ var limit = 200;
 var lat = 0;
 var lon = 0;
 var radius = 1000;
-var magnitude = 0;
+// var magnitude = 0;
 
 //Set Dates
 var today = new Date();
@@ -19,13 +19,13 @@ endtime = todayFormatted;
 function buildMap() {
   //var url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+starttime+"&endtime="+endtime+"&limit="+limit;
   var url = "http://www.spc.noaa.gov/wcm/data/2016_torn.csv";
-  if (typeof lat != 0 && lon != 0) {
-    url += "&latitude="+lat+"&longitude="+lon+"&maxradiuskm="+radius;
-  }
+  // if (typeof lat != 0 && lon != 0) {
+  //   url += "&latitude="+lat+"&longitude="+lon+"&maxradiuskm="+radius;
+  // }
   
-  if (magnitude > 0) {
-    url += "&minmagnitude=" + magnitude;
-  }
+  // if (magnitude > 0) {
+  //   url += "&minmagnitude=" + magnitude;
+  // }
   
   console.log(url);
   
@@ -48,7 +48,7 @@ function buildMap() {
       });
       
       //Fill results label
-      $("#result-count").text("(" + tornadoData.length + " results)");
+      // $("#result-count").text("(" + tornadoData.length + " results)");
       
       var heatMapData = [];
       $.each(tornadoData, function( index, value ) {
@@ -84,20 +84,20 @@ function formatDate(date) {
   return d;
 }
 
-function buildRangeSlider() {
-  $( "#magnitude" ).slider({
-    slide: function( event, ui ) {
-      magnitude = ui.value;
-      $(".magnitude-label").text("min magnitude: " + ui.value);
-    },
-    max: 8
-  });
-}
+// function buildRangeSlider() {
+//   $( "#magnitude" ).slider({
+//     slide: function( event, ui ) {
+//       magnitude = ui.value;
+//       $(".magnitude-label").text("min magnitude: " + ui.value);
+//     },
+//     max: 8
+//   });
+// }
 
 if (window.location.pathname.indexOf("time") == -1) {
     $(document).ready(function() {
       buildMap();
-      buildRangeSlider();
+      // buildRangeSlider();
      
       //generate Autocomplete
       var input = document.getElementById('place-input');
