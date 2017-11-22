@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-/* --------------------   variables, mixin   -------------------------------- */
+/* ---   variables, mixin   --- */
 
 $gray-medium-light: #eaeaea;
 $dark-gray: #423324;
@@ -12,7 +11,7 @@ $dark-gray: #423324;
   box-sizing:         border-box;
 }
 
-/* --------------------   body   ----------------------------------- */
+/* ---   body   --- */
 
 body {
   padding-top: 60px;
@@ -350,7 +349,7 @@ p {
   width:100%;
   background-color: #1a1a1a;
   a {
-  color: #ff9900;
+  color: #0084b4;
     &:hover {
       color: #fff5e6;
     }

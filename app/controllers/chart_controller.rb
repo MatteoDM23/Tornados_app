@@ -6,10 +6,11 @@ class ChartController < ApplicationController
   end
   
   def time
-    @state = "#{params[:state]}"
+   
   end
 
   def feed
+     @state = "#{params[:state]}"
   end
   
   

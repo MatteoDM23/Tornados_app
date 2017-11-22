@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get  '/about',   to: 'static_pages#about'
   get  '/learn', to: 'static_pages#learn'
   get  '/time', to: 'chart#time'
-  post 'time', to: 'chart#time'
+  post 'feed', to: 'chart#feed'
   get  '/feed', to: 'chart#feed'
   
   # sign-up routes: show page and process form
