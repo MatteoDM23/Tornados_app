@@ -194,6 +194,17 @@ body.show {
   h1 {
     color: #d1dbfa;
   }
+  .myBackground {
+  background-color: rgba(242,245,249, 0.1);
+  color: inherit;
+  }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+  }
 }
 
 body.update {
@@ -202,6 +213,17 @@ body.update {
   background-size: cover;
   h1 {
     color: #d1dbfa;
+  }
+  .myBackground {
+  background-color: rgba(242,245,249, 0.1);
+  color: inherit;
+  }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
   }
 }
 
@@ -212,12 +234,23 @@ body.index {
   h1 {
     color: #d1dbfa;
   }
+  h2 {
+  color: #d6f5f5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, .2) 12px 12px 12px;
+  }
+  .myBackground {
+  background-color: rgba(242,245,249, 0.1);
+  color: inherit;
+  }
 }
 
 body.update {
   .myBackground {
-    background-color: rgba(242,245,249, 0.1);
-    color: inherit;
+  background-color: rgba(242,245,249, 0.1);
+  color: inherit;
   }
   h2 {
   color: #d6f5f5;

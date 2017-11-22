@@ -1,6 +1,6 @@
 <% provide(:title, "Feed") %>
 <body class="feed">
-    <h2>Tornadoes - Annual 2016</h2>
+    <h2>Tornadoes - Annual 2016 - part 1</h2>
     <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
     <p>Similar to the previous four years, tornado activity across the U.S. during 2016 was below average. 
     During January-August, there were 943 confirmed tornado reports, with 142 reports still pending for September-December. 
@@ -13,16 +13,16 @@
     <div id="feedMap" style="width: 100%; height: 600px;"></div><br><br>
     
     <!-- chart 2: barchart tornadoes/state -->
-    <h2>USA tornadoes of 2016 - Report</h2>
+    <h2>USA tornadoes of 2016</h2>
     <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
     <div class="jumbotron myBackground4">
         <p><b>USA tornadoes 2016</b></p>
-        <%= bar_chart Tornado.group(:st).count, id: "users-chart", width: "1020px", height: "700px" %>
+        <%= bar_chart Tornado.group(:st).count, id: "users-chart", width: "1020px", height: "700px", xtitle: "Total number of tornadoes", ytitle: "State" %>
     </div>
     <br>
     
     <!-- chart 3: tornadoes/days per state -->
-    <h2>USA tornadoes of 2016 - Report</h2>
+    <h2>USA tornadoes of 2016 by state</h2>
     <p>The following charts display information about the tornadoes trend in 2016 by State, with details of frrequency and F-scale respectively.</p>
     <div class="jumbotron myBackground4">
         
@@ -40,10 +40,10 @@
       <p><%= @text %></p>
       <br>
       <p><b>Tornadoes trend in 2016</b></p>
-      <%= line_chart Tornado.where(:st => @state).group_by_day(:date).count %>
+      <%= line_chart Tornado.where(:st => @state).group_by_day(:date).count, xtitle: "Time", ytitle: "Number of tornadoes" %>
       <br>
       <p><b>F-scale trend chart</b></p>
-      <%= bar_chart Tornado.where(:st => @state).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "700px" %>
+      <%= bar_chart Tornado.where(:st => @state).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "700px", xtitle: "F-scale", ytitle: "Date" %>
       <br>
       
       
