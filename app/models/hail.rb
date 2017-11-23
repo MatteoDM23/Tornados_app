@@ -1,0 +1,2 @@
+class Hail < ApplicationRecord
+end

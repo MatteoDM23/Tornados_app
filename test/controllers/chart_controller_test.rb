@@ -7,18 +7,18 @@ class ChartControllerTest < ActionDispatch::IntegrationTest
       @base_title2 = "CS2012 Assignment 2: Earthquake Data App"
     end
     
-    test "should get time" do
+    test "should get Report 2016 - part1" do
       log_in_as(@user)
       get time_path
       assert_response :success
-      assert_select "title", "#{@base_title2}"
+      assert_select "title", "Feed | #{@base_title2}"
     end
   
-    test "should get feed" do
+    test "should get Report 2016 - part2" do
       log_in_as(@user)
       get feed_path
       assert_response :success
       assert_select "title", "Feed | #{@base_title2}"
     end
-  
+    
 end

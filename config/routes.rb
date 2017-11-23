@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # show homepage route
   root 'static_pages#home'
   
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   get  '/feed', to: 'chart#feed'
   get  '/twitter/show', to: 'twitter#show'
   post 'twitter/show', to: 'twitter#show'
+  get 'hail/show', to: 'hail#show'
+  post 'hail/show', to: 'hail#show'
+
   
   # sign-up routes: show page and process form
   get  '/signup', to: 'users#new'

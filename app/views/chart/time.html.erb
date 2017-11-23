@@ -1,42 +1,39 @@
+<!-- import highchart.js -->
 <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
 <% provide(:title, "Feed") %>
 <body class="time">
-  <h2>Tornadoes - Annual 2016 - part 2</h2>
-  <div class="container">
-  <p>The deadliest tornado outbreaks of the year occurred in late February and in November, 
-  with strong tornadoes striking across the South, killing seven and five people, respectively. 
-  In 2016, there were eight severe weather outbreaks that caused damages exceeding one billion U.S. dollars .</p>
-  <br>
-    <div class="jumbotron myBackground4">
-      <h2>Million $ loss over 2016</h2>
-      <p>The following chart reports the distribution of million $ loss over time in 2016 in USA</p>
-      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-      <%= content_tag "div", id: "items", data: {url: Tornado.order('date ASC') } do %>
-      <% end %>
-    </div>
-  </div>
-  <br>
-  <div class="container">
+  <h2>Tornadoes - Annual 2016 - part 1</h2>
   <p>With the exception of February, each month had a near- to below-average number of tornadoes. 
   In February, there were 102 confirmed tornadoes, above the 1991-2010 average of 29. 
   In June, there were 86 confirmed tornadoes, much less than the average of 243.
   At a statewide level, the number of tornadoes for the year was at least double the average in Alabama (87 vs 44) and 
   Indiana (40 vs 22), but less than half in North Carolina (16 vs 31), South Dakota (16 vs 36) and Tennessee (10 vs 26).</p>
   <!-- chart 1: tornadoes/days -->
-    <div class="jumbotron myBackground4">
-      <h2>USA tornadoes of 2016 - Tornadoes per day</h2>
-      <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
-      <%= line_chart Tornado.group_by_day(:date).count, xtitle: "Date", ytitle: "Number of tornadoes" %>
-    </div>
+  <div class="jumbotron myBackground4">
+    <p><b>2016 US tornadoes - daily distribution</b></p>
+    <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+    <%= line_chart Tornado.group_by_day(:date).count, xtitle: "Date", ytitle: "Number of tornadoes" %>
   </div>
   <br>
   <!-- chart 2: tornadoes/months -->
-  <div class="container"> 
-    <div class="jumbotron myBackground4">
-      <h2>USA tornadoes of 2016 - Tornadoes per month</h2>
-      <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
-      <%= line_chart Tornado.group_by_month(:date).count, xtitle: "Month", ytitle: "Number of Tornadoes" %>
-    </div>
+  <div class="jumbotron myBackground4">
+    <p><b>2016 US tornadoes - monthly distribution</b></p>
+    <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
+    <%= line_chart Tornado.group_by_month(:date).count, xtitle: "Month", ytitle: "Number of Tornadoes" %>
+  </div>
+  <br>
+  <!-- Chart 3: million$loss/time-->
+  <p>The deadliest tornado outbreaks of the year occurred in late February and in November, 
+  with strong tornadoes striking across the South, killing seven and five people, respectively. 
+  In 2016, there were eight severe weather outbreaks that caused damages exceeding one billion U.S. dollars .</p>
+  <br>
+  <div class="jumbotron myBackground4">
+    <p><b>2016 US tornadoes - Overall cost of damages</b></p>
+    <p>The following chart reports the distribution of million $ loss over time in 2016 in USA</p>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <%= content_tag "div", id: "items", data: {url: Tornado.order('date ASC') } do %>
+    <% end %>
   </div>
   <br>
 </body>
