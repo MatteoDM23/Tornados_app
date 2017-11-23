@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   post 'feed', to: 'chart#feed'
   get  '/feed', to: 'chart#feed'
   get  '/twitter/show', to: 'twitter#show'
-  post 'twitter/show', to: 'twitter#show'
+  post '/twitter/show', to: 'twitter#show'
   get 'hail/show', to: 'hail#show'
   post 'hail/show', to: 'hail#show'
 
