@@ -17,8 +17,8 @@
               <% if current_user.admin? == true %>
                 <li><%= link_to "Users", users_path %></li>
               <% end %>
-              <li><%= link_to "Report 2016 - part1", '/feed', :"data-turbolinks" => false %></li>
-              <li><%= link_to "Report 2016 - part2", '/time', :"data-turbolinks" => false %></li>
+              <li><%= link_to "Report 2016 - part1", '/time', :"data-turbolinks" => false %></li>
+              <li><%= link_to "Report 2016 - part2", '/feed', :"data-turbolinks" => false %></li>
               <li><%= link_to "Report 2016 - part3", '/hail/show', :"data-turbolinks" => false %></li>
               <li><%= link_to "Storms Forecast", 'twitter/show', :"data-turbolinks" => false %></li>
               <li class="divider"></li>

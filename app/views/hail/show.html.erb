@@ -1,12 +1,18 @@
 <% provide(:title, "Hails") %>
 <body class="feed">
-    <h2>Hail storms - Annual 2016</h2>
+    <h2>2016 hail storms - Annual 2016</h2>
     <p>Text to be added</p><br>
     
+    <!-- chart 1: hails/days -->
+    <h2>2016 US hail storms - time distribution</h2>
+    <p>The following chart reports the distribution of hail storms over time in 2016 in USA with details of a total number of events per day</p>
+    <div class="jumbotron myBackground4">
+        <p><b>Hail storms per day</b></p>
+        <%= line_chart Hail.group_by_day(:date).count, xtitle: "Date", ytitle: "Number of hail storms" %>
+    </div>
     
-    
-    <!-- chart 3: barchart hails/state -->
-    <h2>USA Hails in 2016</h2>
+    <!-- chart 2: barchart hails/state -->
+    <h2>2016 US hail storms - state distribution</h2>
     <p>The following chart reports the distribution of hail storms over time in 2016 in USA with details of a total number of events per day</p>
     <div class="jumbotron myBackground4">
         <p><b>USA tornadoes 2016</b></p>
@@ -14,9 +20,9 @@
     </div>
     <br>
     
-    <!-- chart 4 and 5: tornadoes/days per state -->
-    <h2>USA hail storms in 2016 by state</h2>
-    <p>The following charts display information about the hail storms trend in 2016 by State, with details of frrequency and F-scale respectively.</p>
+    <!-- chart 3 and 4: tornadoes/days per state -->
+    <h2>2016 US hail storms - statistics by state</h2>
+    <p>The following charts display information about the hail storms trend in 2016 by State, with details of frequency and F-scale respectively.</p>
     <div class="jumbotron myBackground4">
         <p><b>Statistics by State</b></p>
         <!-- drop down menu code -->
@@ -29,14 +35,14 @@
                 <% end %>
             </div>
         </div><br>
-      <p><%= @text %></p>
-      <br>
-      <p><b>Hail storms trend in 2016</b></p>
-      <%= line_chart Hail.where(:st => @country).group_by_day(:date).count, xtitle: "Time", ytitle: "Number of hail storms" %>
-      <br>
-      <p><b>F-scale trend chart</b></p>
-      <%= bar_chart Hail.where(:st => @country).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "900px", xtitle: "F-scale", ytitle: "Date" %>
-      <br>
+        <p><%= @message %></p>
+        <br>
+        <p><b>Hail storms trend in 2016</b></p>
+        <%= line_chart Hail.where(:st => @country).group_by_day(:date).count, xtitle: "Time", ytitle: "Number of hail storms" %>
+        <br>
+        <p><b>F-scale trend chart</b></p>
+        <%= bar_chart Hail.where(:st => @country).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "900px", xtitle: "F-scale", ytitle: "Date" %>
+        <br>
     </div>
     <br><br><br><br>
 </body>
