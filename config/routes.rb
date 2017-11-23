@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get  '/time', to: 'chart#time'
   post 'feed', to: 'chart#feed'
   get  '/feed', to: 'chart#feed'
-  get 'twitter/show'
+  get  '/twitter/show', to: 'twitter#show'
+  post 'twitter/show', to: 'twitter#show'
   
   # sign-up routes: show page and process form
   get  '/signup', to: 'users#new'
