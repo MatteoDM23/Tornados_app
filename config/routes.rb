@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   # show homepage route
   root 'static_pages#home'
   
@@ -9,6 +8,7 @@ Rails.application.routes.draw do
   get  '/time', to: 'chart#time'
   post 'feed', to: 'chart#feed'
   get  '/feed', to: 'chart#feed'
+  get 'twitter/show'
   
   # sign-up routes: show page and process form
   get  '/signup', to: 'users#new'
