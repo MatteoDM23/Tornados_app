@@ -11,7 +11,7 @@ class ChartControllerTest < ActionDispatch::IntegrationTest
       log_in_as(@user)
       get time_path
       assert_response :success
-      assert_select "title", "#{@base_title2}"
+      assert_select "title", "Feed | #{@base_title2}"
     end
   
     test "should get feed" do
