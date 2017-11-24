@@ -23,6 +23,8 @@ gem 'groupdate'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'rspec-rails'
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -37,7 +39,15 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.14.1'
   gem 'guard-minitest',           '2.4.6'
+  
+  gem 'cucumber-rails', :require=>false 
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'factory_bot'
+
 end
+
 
 group :production do
   gem 'pg', '0.20.0'
