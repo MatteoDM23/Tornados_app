@@ -1,20 +1,20 @@
 require 'spec_helper'
 require 'rails_helper'
 
-feature 'create user' do
-    scenario "can create user" do
-        visit '/signup'
-        expect(page).to have_content('Sign up')
+# feature 'create user' do
+#     scenario "can create user" do
+#         visit '/signup'
+#         expect(page).to have_content('Sign up')
         
-        fill_in 'Name', :with=>'Example User'
-        fill_in 'Email', :with=>'example@railstutorial.org'
-        fill_in 'Password', :with=>'foobar'
-        fill_in 'Confirmation', :with=>'foobar'
-        click_button 'Create my account'
-        expect(page).to have_content('name: Example User')
-        expect(page).to have_content('email: example@railstutorial.org')
-    end
-end
+#         fill_in 'Name', :with=>'Example User'
+#         fill_in 'Email', :with=>'example@railstutorial.org'
+#         fill_in 'Password', :with=>'foobar'
+#         fill_in 'Confirmation', :with=>'foobar'
+#         click_button 'Create my account'
+#         expect(page).to have_content('name: Example User')
+#         expect(page).to have_content('email: example@railstutorial.org')
+#     end
+# end
 
 
 
