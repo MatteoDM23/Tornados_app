@@ -37,6 +37,11 @@
       <%= bar_chart Tornado.where(:st => @state).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "700px", xtitle: "F-scale", ytitle: "Date" %>
       <br>
     </div>
-    <br><br><br><br>
+    <br>
+                <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
+            <h2 id="live-label">Tornadoes 2016 in USA - Heat Map <span id="result-count"></span></h2>
+            <p>The map below shows a heat map of large storms currently occurring in the US</p>
+            <div id="feedMap" style="width: 100%; height: 600px;"></div><br><br>
+<br><br><br>
 </body>
 
