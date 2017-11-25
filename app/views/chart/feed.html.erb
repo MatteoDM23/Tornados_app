@@ -1,23 +1,27 @@
 <% provide(:title, "Feed") %>
 <body class="feed">
     <h2>Tornadoes - Annual 2016 - part 2</h2>
-    <p>Similar to the previous four years, tornado activity across the U.S. during 2016 was below average. 
-    During January-August, there were 843 confirmed tornado reports, with 142 reports still pending for September-December. 
-    This brings the 2016 preliminary tornado count to 985, with the final count expected to be lower. 
-    As with most years, there were several large and destructive tornado and severe weather outbreaks during 2016.</p><br>
+    <p>[Source: NOAA National Centers for Environmental Information, State of the Climate: Tornadoes for Annual 2016, published online January 2017, 
+       retrieved on November 25, 2017 from https://www.ncdc.noaa.gov/sotc/tornadoes/201613].</p>
+    <p>With the exception of February, each month had a near- to below-average number of tornadoes. 
+       In February, there were 102 confirmed tornadoes, above the 1991-2010 average of 29. 
+       In June, there were 86 confirmed tornadoes, much less than the average of 243.
+       At a statewide level, the number of tornadoes for the year was at least double the average in Alabama (87 vs 44) and Indiana (40 vs 22), 
+       but less than half in North Carolina (16 vs 31), South Dakota (16 vs 36) and Tennessee (10 vs 26).</p>
     <!-- chart 1: barchart tornadoes/state -->
     <h2>USA tornadoes of 2016</h2>
-    <p>The following chart reports the distribution of tornadoes over time in 2016 in USA with details of a total number of events per day</p>
     <div class="jumbotron myBackground4">
         <p><b>USA tornadoes 2016</b></p>
+        <p>This chart reports the statistics in each State with details of a total number of events per day</p>
         <%= bar_chart Tornado.group(:st).count, id: "users-chart", width: "1020px", height: "700px", xtitle: "Total number of tornadoes", ytitle: "State" %>
     </div>
     <br>
     <!-- chart 2: tornadoes/days per state -->
     <h2>USA tornadoes of 2016 by state</h2>
-    <p>The following charts display information about the tornadoes trend in 2016 by State, with details of frrequency and F-scale respectively.</p>
+    <p>Additional information on individual outbreaks is available in our monthly tornado reports.</p>
     <div class="jumbotron myBackground4">
         <p><b>Statistics by State</b></p>
+        <p>This charts display statistics by State, with details of frequency and F-scale respectively.</p><br>
         <!-- drop down menu code -->
         <div class="row">
             <div class="col-md-4 col-md-offset-4">

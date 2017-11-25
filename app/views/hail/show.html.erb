@@ -1,13 +1,16 @@
 <% provide(:title, "Hails") %>
 <body class="feed">
     <h2>2016 hail storms - Annual 2016</h2>
-    <p>Text to be added</p><br>
-    
+    <p>Below is our report of hail storm across the USA in 2016.</p><br>
+    <p>[Source: NOAA National Centers for Environmental Information, State of the Climate: Hail storms for Annual 2016, published online January 2017, 
+       retrieved on November 25, 2017 from http://www.spc.noaa.gov/climo/online/monthly/2016_annual_summary.html].</p>
+
     <!-- chart 1: hails/days -->
     <h2>2016 US hail storms - time distribution</h2>
     <p>The following chart reports the distribution of hail storms over time in 2016 in USA with details of a total number of events per day</p>
     <div class="jumbotron myBackground4">
         <p><b>Hail storms per day</b></p>
+        <p>This chart reports the distribution of hail storms per day in 2016 in USA</p>
         <%= line_chart Hail.group_by_day(:date).count, xtitle: "Date", ytitle: "Number of hail storms" %>
     </div>
     
@@ -15,7 +18,8 @@
     <h2>2016 US hail storms - state distribution</h2>
     <p>The following chart reports the distribution of hail storms over time in 2016 in USA with details of a total number of events per day</p>
     <div class="jumbotron myBackground4">
-        <p><b>USA tornadoes 2016</b></p>
+        <p><b>USA hail storms 2016</b></p>
+        <p>This chart reports the statistics in each State with details of a total number of events per day</p>
         <%= bar_chart Hail.group(:st).count, id: "users-chart", width: "1020px", height: "700px", xtitle: "Total number of Hail storms", ytitle: "State" %>
     </div>
     <br>
@@ -25,6 +29,7 @@
     <p>The following charts display information about the hail storms trend in 2016 by State, with details of frequency and F-scale respectively.</p>
     <div class="jumbotron myBackground4">
         <p><b>Statistics by State</b></p>
+        <p>This charts display statistics by State, with details of frequency and F-scale respectively.</p><br>
         <!-- drop down menu code -->
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
