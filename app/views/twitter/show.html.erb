@@ -2,37 +2,12 @@
 <body class="twitter">
     <div class="container"> 
         <div class="jumbotron myBackground">
-            <!-- weather widget -->
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h2>Where are you travelling to?</h2>
-                    <p>Tye in your destination to check weather forecasts</p>
-                    <%= form_tag "/twitter/show" do |f| %>
-                    <%= text_field_tag :town, nil, placeholder: "Type in your town", class: 'form-control' %>
-                    <%= submit_tag "Get Weather Forecasts", class: "btn btn-primary" %>
-                    <% end %>
-                </div>
-            </div><br>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/57d15n2d09/aberdeen/" data-label_1="<%= @town %>" data-label_2="WEATHER" data-theme="original" >ABERDEEN WEATHER</a>
-                <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
-                </script>
             <br>
             <!-- chart 1: google map -->
             <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwNwMzGpr13bzBoWDc11huaDj4zDnn9g&libraries=visualization,places', 'data-turbolinks-track': 'reload' %>
             <h2 id="live-label">Tornadoes 2016 in USA - Heat Map <span id="result-count"></span></h2>
             <p>The map below shows a heat map of large storms currently occurring in the US</p>
             <div id="feedMap" style="width: 100%; height: 600px;"></div><br><br>
-    
-
-            <!-- live twitter US tornadoes -->
-            <!--<center><a class="twitter-timeline" data-width="800" data-height="500" data-theme="light" -->
-            <!--data-link-color="#2B7BB9" href="https://twitter.com/USTornadoes?ref_src=twsrc%5Etfw">Tweets by USTornadoes</a> -->
-            <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>-->
-            <!--<br>-->
-            <!--<center><a href="https://twitter.com/intent/tweet?screen_name=ustornadoes&ref_src=twsrc%5Etfw" class="twitter-mention-button" -->
-            <!--data-show-count="false">Tweet to @ustornadoes</a>-->
-            <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>-->
         </div>
     </div>
 </body>
