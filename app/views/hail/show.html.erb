@@ -48,6 +48,11 @@
         <p><b>F-scale trend chart</b></p>
         <%= bar_chart Hail.where(:st => @country).group(:date).sum(:mag), id: "users-chart-2", width: "1020px", height: "900px", xtitle: "F-scale", ytitle: "Date" %>
         <br>
+        <p><b>Relation between Hail storma and Tornadoes</b></p>
+        <p>And finally a comparison between hail storma and tornadoes in <%= @country %>.</p>
+        <%= line_chart [
+        	{name: "Tornadoes", data: Tornado.where(:st => @country).group_by_day(:date).count},
+        	{name: "Hail storms", data: Hail.where(:st => @country).group_by_day(:date).count}], xtitle: "Date", ytitle: "Events per day" %>
     </div>
     <br><br><br><br>
 </body>
