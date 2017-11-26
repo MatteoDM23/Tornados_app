@@ -1,0 +1,808 @@
+commit 8d49c8a80e1c9768e476c06a77304cb37f128f91
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 26 19:07:27 2017 +0000
+
+    assets precompiled
+
+commit 5a5ad753d8c775545c99d21b81daaca9735d0858
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 26 15:01:58 2017 +0000
+
+    test los
+
+commit d02e2faad63433b60c2dae04c781b1f8e27605bb
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 26 13:50:31 2017 +0000
+
+    readme file added
+
+commit 7fcebc208780a07e3d51061f939a1ddb3a26c6d2
+Merge: fc46d9dd 742fba1a
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Sun Nov 26 12:49:21 2017 +0000
+
+    Merged add-chart-comparison into master
+
+commit 742fba1aac0a2061b96b4248f2cbcdc0ddb6e550
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 26 12:43:17 2017 +0000
+
+    added comparison chart
+
+commit fc46d9dd2a2ac15e004bef936ffebc20f2a41a0c
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 16:43:17 2017 +0000
+
+    background show users
+
+commit fe9d9d00623d309a36d14ad67dbfb6ceccf07f33
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 16:32:40 2017 +0000
+
+    background show users
+
+commit a285eee8c65de7c8c02e274539dc371a08d21e4f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 14:45:31 2017 +0000
+
+    layout ready
+
+commit 60579304bd15939f2330dbec6b2fd5a28f677d9b
+Merge: 1d91524b 604fb904
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 14:35:21 2017 +0000
+
+    Merged add-text into master
+
+commit 604fb904853c9bfda7d75c0db91c9adcd1b661ca
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 14:34:22 2017 +0000
+
+    text and references done
+
+commit 1d91524b7c90e0781b22db27582862e4f5c7c22a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 12:52:57 2017 +0000
+
+    give up with google maps in production
+
+commit ebb3b7de497fc068c6949eff8f82b3eaf45712b8
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 25 12:42:44 2017 +0000
+
+    google maps
+
+commit 814dad5f2fc0e87f86147f5b71645557e9469bcf
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 24 14:32:03 2017 +0000
+
+    ready to test
+
+commit fd3944fc4ba1edc5596b76c6741b0aa2752c275f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 24 13:36:07 2017 +0000
+
+    heroku, please...
+
+commit cf063eb3b018f328ff0f17642b6a1c8bf536a60e
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 24 00:47:40 2017 +0000
+
+    heroku does not upload charts
+
+commit 93aea790e161949bcfabe7c51fb5cb676ea1422f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 24 00:11:49 2017 +0000
+
+    Gemfile uploaded
+
+commit c492d8c3aefb1622d9e13dfc0c8f84b39624a3b6
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 24 00:04:43 2017 +0000
+
+    images deleted
+
+commit dbaf9f73f55f7dbe162194cf5397e8ef0aae0019
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 23:48:30 2017 +0000
+
+    heroku, please...
+
+commit 9bde0f0fe6ab5d314f78587ed08b3b6fc79913a6
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 23:24:25 2017 +0000
+
+    deploy to heroku
+
+commit 77d3a773b590d25f780501edb8a56a1bd5daec89
+Merge: 40700133 b81365b7
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 22:39:30 2017 +0000
+
+    Merged add-another-data-source into master
+
+commit b81365b7db04e59e50aafa327d2eaca0e0834d14
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 22:37:57 2017 +0000
+
+    hail storms stats added
+
+commit d8666490a5307390477defe0d328ec4480a3e92c
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 21:53:11 2017 +0000
+
+    hail storm page growing
+
+commit 77b8e821ad74e20a9d239088c4296b417f01eaec
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 21:20:31 2017 +0000
+
+    parse done
+
+commit d7a2172be8dd47934cbf3a624ed16e8c275ab6e8
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 21:11:52 2017 +0000
+
+    ready to parse csv file
+
+commit 3e2157a7ede2f7dc5d40fbe2db85b421271aa43a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 20:40:26 2017 +0000
+
+    second csv file added
+
+commit 8d0508c484a2be79921b50ee052d37fac9b661e5
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 17:00:11 2017 +0000
+
+    tests
+
+commit 28b3be395d5c4ab465dd55bba29a25c8f4f6960b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 15:36:38 2017 +0000
+
+    tests fixed
+
+commit 37dc09e6e92fb156a7fb5c0e4076c0d9f168e407
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 13:54:09 2017 +0000
+
+    first attempt failed
+
+commit 40700133e5627e4fa283d610b928f9d553b6d4d7
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 12:41:51 2017 +0000
+
+    add live forecast
+
+commit 5e983ccbb03beedb5bc86a3d1bcb8a53f3573d85
+Merge: ea6cfaea ac789b18
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 03:00:19 2017 +0000
+
+    Merged twitter into master
+
+commit ac789b1860d47bce877591318650e15f76a58816
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 23 02:59:32 2017 +0000
+
+    stop here
+
+commit ea6cfaea601bfbd4b2e99fc6688274363a786174
+Merge: 390897e8 e4c17219
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 21:43:26 2017 +0000
+
+    sprocket
+
+commit e4c17219726b3434e33b50244680a56d14cba567
+Merge: a0fb8582 48d46f24
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 21:06:59 2017 +0000
+
+    Merged filter-search-4 into master
+
+commit 48d46f248482c93e76bd9eaffc19585191615aeb
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 21:06:25 2017 +0000
+
+    add report 1 and 2 final
+
+commit 390897e88c7880dcecec0265f13a7fa6722afa14
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 21:04:40 2017 +0000
+
+    assets
+
+commit a0fb8582b07141894a417efcb5e617f796e2efec
+Merge: 89ad5040 cdf04f2a
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 18:30:20 2017 +0000
+
+    Merged filter-search-4 into master
+
+commit cdf04f2a26c807ba5eaf9340f38fe91d5ad6807a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 18:29:01 2017 +0000
+
+    Time and Feed pages ready
+
+commit 5aee2eccabdb9268efee97bf37755f693a38dfb0
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 17:29:57 2017 +0000
+
+    feed page done
+
+commit 9bf7589b90a7a25d950be5f44a365615a28ad4d3
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 14:21:19 2017 +0000
+
+    charts added + filter search
+
+commit b5549ec4065d7117b23048687dc3675ad8280483
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 01:19:41 2017 +0000
+
+    drop down not coming
+
+commit 89ad50407528d7270205b5c1b8b0b5bcbb92cfb9
+Merge: 1d69d453 52e2ca56
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 00:46:46 2017 +0000
+
+    Merged filter-search-3 into master
+
+commit 52e2ca566cc91cc62739dceacfc767b02c1fcf9c
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 22 00:44:54 2017 +0000
+
+    other charts added
+
+commit 184da9b131f015507945251d27edae1441006203
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 21:24:10 2017 +0000
+
+    drop down manu not coming
+
+commit 453eb06f347e94aad8bfa717ab05505a95c7c644
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 18:28:49 2017 +0000
+
+    development log
+
+commit 76f9b53fc8fea3f13849a69becb5ec9c9e44489b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 18:06:47 2017 +0000
+
+    trying to implement dropdown menu
+
+commit 1d69d4532bd45d9fc82197c3e988d28f0c529146
+Merge: d6e6891d 68d4cb40
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 15:52:58 2017 +0000
+
+    Merged filter-search-2 into master
+
+commit 68d4cb4099745d63774917ed6a422637ea6c084d
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 15:48:34 2017 +0000
+
+    state form
+
+commit d6e6891dd6d4ee09357ec4df0ceab860ae84efc2
+Merge: 3758b6c4 08d6026f
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 10:00:30 2017 +0000
+
+    Merged filter-search into master
+
+commit 08d6026f9c396cea29f4d419908a80eed012136b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 09:58:30 2017 +0000
+
+    chartkick added and works!
+
+commit 7e2eb0f5c2a24b46b2bfe76e3f930b8890e22ded
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 21 01:36:45 2017 +0000
+
+    other edits to time
+
+commit 3758b6c45d158348f91972e115edf0eafe26e382
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 23:13:31 2017 +0000
+
+    layout JS pages
+
+commit 3ea76ff9e8a7fccafa692cf94351d4387ca9b43e
+Merge: fec23deb bfc6d8d3
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 20:06:02 2017 +0000
+
+    Merged time-page into master
+
+commit bfc6d8d3bb8b96d379d7747f47fc78eecc3b2153
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 20:04:56 2017 +0000
+
+    heat map done
+
+commit fec23debef2ea6912eec9c5e2f7507fe77c1d381
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 16:45:34 2017 +0000
+
+    heroku, please...
+
+commit a8a6677f44849e059a92d08bdf55fb25ad1a34bc
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 16:39:38 2017 +0000
+
+    layout feed page
+
+commit 5fba2e3e18f42e0d2a8fb34ea2783ea415dc28c2
+Merge: 9b28da1b f6fcde25
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 16:32:31 2017 +0000
+
+    Merged feed into master
+
+commit f6fcde259533acd26c80eb6e2d0707c06874f3bb
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 16:30:30 2017 +0000
+
+    feed page done
+
+commit c6748ee2114890a6bc56343f86add8559c5371f9
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 15:40:20 2017 +0000
+
+    feed2
+
+commit 81f0479041569b44e82e8e5923677a49c7860a74
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 15:32:22 2017 +0000
+
+    feeed feature
+
+commit 9b28da1bfb5f81d2c92a050c4f9a9237f89c6cbb
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 14:51:16 2017 +0000
+
+    hello
+
+commit d02d7d30f47a35a5bee791e163797ba2f5994453
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 12:01:39 2017 +0000
+
+    feed page
+
+commit 26137b6dacfd25e573b549e2ed3a7e0216c8825a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 20 11:25:23 2017 +0000
+
+    ready layout admin pages
+
+commit ca6e90eaa6851c7c3f73e626557f32b63bae281f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 23:49:48 2017 +0000
+
+    app not upgraded on heroku
+
+commit 5de634c8720e2f63b1a3cf3ea5d438c934129d60
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 23:43:28 2017 +0000
+
+    cache
+
+commit 18767d2da8dd0b00031b29b0fd33002e63406dad
+Merge: f85f8681 89c69192
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 22:55:56 2017 +0000
+
+    Merged live-google-maps into master
+
+commit 89c69192be31fc3ae5cb6dac06b5da1ae89d13d7
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 22:54:02 2017 +0000
+
+    admin users feature
+
+commit 625f2c930679de8c544a21552e254bbb2665831d
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 21:42:41 2017 +0000
+
+    google maps added
+
+commit f85f8681cbd3044a94b47d9dccd274dae5305981
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 16:47:43 2017 +0000
+
+    update social on heroku
+
+commit eb8ab1cf204b4fba6002a1071409378bd9624224
+Merge: 5aa472df 0fd2bce5
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 16:32:39 2017 +0000
+
+    Merged charts into master
+
+commit 0fd2bce5f95c59c27a31ee638e2eb69246318561
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 16:27:35 2017 +0000
+
+    learn page layout p
+
+commit ee67448c6baff203a0eba79a3f8916a728f68384
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 16:13:37 2017 +0000
+
+    learn page
+
+commit fc57f71d1e073c85f73b6e5be1c3905df2ea8ad2
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 14:18:12 2017 +0000
+
+    layout charts
+
+commit b9d8dd984fedb89d785f540a80c6d2c3d1e44c14
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 12:56:02 2017 +0000
+
+    assets-sprockets
+
+commit 5aa472df2b44aefd6fb72c5a631384bfd3d45636
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sun Nov 19 02:49:58 2017 +0000
+
+    layout9
+
+commit 5f9e02e1371b0b6bddb9dc67ed3486b79d023cbd
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 16:19:18 2017 +0000
+
+    env prod edited
+
+commit b2564957c4550dbf86029d52753a9389899577a3
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 15:33:23 2017 +0000
+
+    mdl
+
+commit b675418147824826896e8c54ebe7f7b13148ac6b
+Merge: 1248dcda 55874c40
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 15:26:27 2017 +0000
+
+    Merged carosel into master
+
+commit 55874c40bf93ce140b49e509f57678062c72b518
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 15:24:56 2017 +0000
+
+    layout
+
+commit 1248dcda9f186b62ed14ec11c3c7c3a83cc1e0d6
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 13:00:39 2017 +0000
+
+    mah
+
+commit 89c505a201fbcce603593c14375ba0e1a23e202e
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 01:08:44 2017 +0000
+
+    log test update
+
+commit c5a4e6d44bb1a315e969c500eb14b6b6ddfba45b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Sat Nov 18 00:45:18 2017 +0000
+
+    environment production upload
+
+commit 4b87c7d13f9aa4a3d13b7de507fcd90188b75778
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 13:49:32 2017 +0000
+
+    activate method
+
+commit d3dcdf0c1f1c10b058b80297dd5134840081611d
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 13:14:58 2017 +0000
+
+    fanculo non funziona zio cane
+
+commit 086f59e58ccfe6f2a22fc10dd722f06e45aec754
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 12:50:53 2017 +0000
+
+    assets precomipled
+
+commit c405dff20d4a986ee791f90c8d906210c11533e4
+Merge: c80be160 7f92a658
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 12:26:03 2017 +0000
+
+    Merged add-email-in-production into master
+
+commit 7f92a658b994c0b3c7d4288892cdd332ea46a03a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 12:24:51 2017 +0000
+
+    email in production
+
+commit c80be160ef8d94402f93ba33725f932c54108620
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 11:53:47 2017 +0000
+
+    account activation almost done
+
+commit e0926a92275a9e41d21c1adfc2a9eaaa0cd56c6e
+Merge: 00d5236c 3041757a
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 01:58:30 2017 +0000
+
+    Merged account-activation into master
+
+commit 3041757abaef9f56a109bb64ddbb35b5bf6041d8
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 01:53:16 2017 +0000
+
+    account activation
+
+commit 079b0b9b9281c9ab5c421a834343a651f6e55494
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 01:16:08 2017 +0000
+
+    email test
+
+commit c3a134aaca7bdc1d7024043f81d8398cb96c5fdb
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Fri Nov 17 00:58:29 2017 +0000
+
+    email preview
+
+commit 53f9e584daaaab0d567ad0172dfe91e8d89a47d5
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 22:22:38 2017 +0000
+
+    email preview
+
+commit ce3c3eeb4807fe268127e51a48b61469a75c034f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 22:09:37 2017 +0000
+
+    mailer template
+
+commit 07b14f5ac54eefe97cc40d0f3503966e95100a49
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 21:24:29 2017 +0000
+
+    account activation resource
+
+commit 00d5236ca64d588c384507d9ec44f64ff5df4cb0
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 20:41:48 2017 +0000
+
+    log file update
+
+commit 2d37e8efc555ff323572470c0911a16c1044c6a8
+Merge: 8873bbac 613d99e2
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 01:22:42 2017 +0000
+
+    Merged add-some-css into master
+
+commit 613d99e225f0e21cf86091ce416ad673645c9c86
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 01:21:55 2017 +0000
+
+    social media buttons working
+
+commit 621920b9882028f77b6fe7781c75ce23c9e73ab1
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Thu Nov 16 01:00:53 2017 +0000
+
+    social media footer icons
+
+commit 8873bbac42771f9b4a3963cdbe4ff4aec77fa1d7
+Merge: 1c277ecb 72d2750a
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:58:06 2017 +0000
+
+    Merged deleting-users into master
+
+commit 72d2750aa7428eec9ac026a8aba307fd5a42a1b1
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:57:18 2017 +0000
+
+    admin features added
+
+commit 990f1ede0b29900ddc129d49bbf6fe1cc0450a55
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:41:34 2017 +0000
+
+    destroy action added
+
+commit ed396607e95948e838f7b302879730dd0a7db1f0
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:23:06 2017 +0000
+
+    add admin column to users
+
+commit 1c277ecbe34f16dfc82f9ac67e4e75e85cae10f2
+Merge: 440418c1 04f7ef2b
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:13:42 2017 +0000
+
+    Merged updating-users3 into master
+
+commit 04f7ef2bf81a520dca5cbd788213a1d25fe6a397
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:12:11 2017 +0000
+
+    partial refactoring
+
+commit 74c5751668202b795933ab2902290f6ad2342e9c
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 23:04:36 2017 +0000
+
+    users pagination
+
+commit a272ecd0f338159666519f59af2c5b138431d7f9
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 22:54:15 2017 +0000
+
+    faker and seed file
+
+commit 440418c14ef63b4f0eed9bf8e989feeb03e1e07e
+Merge: ca94410d cf156a18
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 22:04:17 2017 +0000
+
+    Merged trial2 into master
+
+commit cf156a18c88ec40b6890a4f3f39688146574af10
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 22:03:39 2017 +0000
+
+    trial3
+
+commit a15b86dba975326b2ef92273ad9c4988412bb096
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 22:02:59 2017 +0000
+
+    trial2
+
+commit ca94410d7bde865773ef71e3a2874443a2da4ac5
+Merge: d7ecac04 2979b190
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 22:00:24 2017 +0000
+
+    Merged git_branch_trial into master
+
+commit 2979b190c4ab8e823390e836b031603b63556c63
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 21:59:35 2017 +0000
+
+    trial
+
+commit d7ecac0485bd98445b148ae2a99451d9cb53d7f5
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 21:57:41 2017 +0000
+
+    log file
+
+commit f650f1e480f94c2ef88b7f29bad185988194e337
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 18:25:17 2017 +0000
+
+    other css
+
+commit 21a3f4a10f9d94047e8668eabb8c0372e21ff897
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 18:10:38 2017 +0000
+
+    other css edits
+
+commit f1e8b3e668f087adfd83614cfbea7d204e817068
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 16:59:39 2017 +0000
+
+    authentication users
+
+commit 7a9a807426887d00fc7baacc57d749ad5459bf3c
+Merge: 030d707a 8eb0f338
+Author: Matteo <demiurgo1984@gmail.com>
+Date:   Wed Nov 15 14:36:09 2017 +0000
+
+    Merged updating-users into master
+
+commit 8eb0f3384257b2ffd4f669373c0f68ed0b2cc19b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 14 17:55:42 2017 +0000
+
+    chapter 10.2
+
+commit 030d707ac510c787d412dbb439d28d0f3d275ca4
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 14 00:24:11 2017 +0000
+
+    little edit
+
+commit fc4382cd9535ab888891f4a048d20ea1ae631e1b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Tue Nov 14 00:13:33 2017 +0000
+
+    containers in contact page
+
+commit 8115b0bf862626f4b376d13343194b0c4fe6d9c2
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 23:39:09 2017 +0000
+
+    semi transparent containers jumbotron
+
+commit a8873eba39ba86b1a1c5529132addb1600fb0ae2
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 22:42:56 2017 +0000
+
+    Implement advanced login
+
+commit 1f90bb4593470b2ffa83645816b2fe761bd7315c
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 20:00:54 2017 +0000
+
+    code cleaned
+
+commit adfcc1fddd979f719cdfa5a92adca5c479b2dd80
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 19:34:17 2017 +0000
+
+    Contact page
+
+commit 645f2bc15729b244ba41a976a2e6b0d53f079293
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 14:42:46 2017 +0000
+
+    other layout
+
+commit 8f5b54da7bf789441e4a7ede181b6239d8e8f479
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 14:21:30 2017 +0000
+
+    about and signup layouts
+
+commit a239373317c2b4259c93fb7981018fbb8751478f
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 10:17:49 2017 +0000
+
+    I forgot to create a new branch
+
+commit cde0c82c7cf1e2c9880c3e4d1bd3f8fde1d67f5a
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Mon Nov 13 04:17:44 2017 +0000
+
+    Layout
+
+commit f72db15b79677e97c98bb78fc0bacdd9c6ec83d4
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Oct 25 10:10:54 2017 +0000
+
+    second trial commit
+
+commit 4a7e6553632f7d4728b179adfb59b9b8ada9d169
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Oct 25 10:03:19 2017 +0000
+
+    project
+
+commit 8f10fa6f8244c42b9b8ead3f3006b611ebcce7d1
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Oct 25 09:58:22 2017 +0000
+
+    first commit
+
+commit 8a27ef8530cccd066c46520c7ebcd297ff10794b
+Author: m.demichele.16@aberdeen.ac.uk <demiurgo1984@gmail.com>
+Date:   Wed Oct 25 09:56:45 2017 +0000
+
+    Initial commit
