@@ -32,9 +32,12 @@ To stop the server, enter:
 
 - sudo service postgresql stop
 
-The app can be accessed on Heroku at the following link: https://peaceful-peak-81480.herokuapp.com/
+Admin credentials are:
+- username: 'Admin User'
+- email: 'admin@railstutorial.org'
+- password: 'administrator'
 
-Login: demiurgo1984@gmail.com
-Password: secretpassword
+Alternatively, the app can be accessed on a Heroku host at the following link: https://peaceful-peak-81480.herokuapp.com/ .
+Feel free to sign up by providing a valid email and a password.
 
 This app was created by: Matteo De Michele
