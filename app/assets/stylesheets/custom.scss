@@ -206,6 +206,9 @@ body.feed {
   background-color: rgba(242,245,249, 0.5);
   color: inherit;
   }
+  p {
+    color: $gray-medium-light;
+  }
 }
 
 body.time {
@@ -216,6 +219,10 @@ body.time {
   background-color: rgba(242,245,249, 0.5);
   color: inherit;
   }
+  p {
+    color: $gray-medium-light;
+  }
+
 }
 
 body.twitter {
@@ -227,6 +234,7 @@ body.twitter {
   color: inherit;
   }
 }
+
 /* --- section, textarea, center --- */
 
 section {
