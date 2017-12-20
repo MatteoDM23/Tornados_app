@@ -10,11 +10,10 @@
      During January-August, there were 843 confirmed tornado reports, with 142 reports still pending for September-December. 
      This brings the 2016 preliminary tornado count to 985, with the final count expected to be lower. 
      As with most years, there were several large and destructive tornado and severe weather outbreaks during 2016.</p><br>
-  <p>The following charts provide a graphical representation of this trend in 2016.</p>
+  <p>The following charts provide a graphical representation of this trend in 2016.</p><br>
   <!-- chart 1: tornadoes/days -->
   <div class="jumbotron myBackground4">
-    <p><b>2016 US tornadoes - daily distribution</b></p>
-    <p>This chart reports the distribution of tornadoes per day in 2016 in USA</p>
+    <p><b>2016 US tornadoes - daily distribution</b></p><br>
     <%= line_chart Tornado.group_by_day(:date).count, xtitle: "Date", ytitle: "Number of tornadoes" %>
   </div>
   <br>
@@ -24,8 +23,7 @@
      Of those, there were 2 EF-4's, one reported on May 9th and May 25th. </p>
   <!-- chart 2: tornadoes/months -->
   <div class="jumbotron myBackground4">
-    <p><b>2016 US tornadoes - monthly distribution</b></p>
-    <p>This chart reports the distribution of tornadoes per month in 2016 in USA</p>
+    <p><b>2016 US tornadoes - monthly distribution</b></p><br>
     <%= line_chart Tornado.group_by_month(:date).count, xtitle: "Month", ytitle: "Number of Tornadoes" %>
   </div>
   <br>
@@ -36,8 +34,7 @@
   <p>Details of the global costs caused by tornadoes in 2016 are displayed in the chart below.</p>
   <br>
   <div class="jumbotron myBackground4">
-    <p><b>2016 US tornadoes - Overall cost of damages</b></p>
-    <p>This chart reports the distribution of costs in 2016 in USA</p>
+    <p><b>2016 US tornadoes - Overall cost of damages</b></p><br>
     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
     <%= content_tag "div", id: "items", data: {url: Tornado.order('date ASC') } do %>
     <% end %>
